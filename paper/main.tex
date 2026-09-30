@@ -41,7 +41,7 @@ Friston and Frith model reciprocal signalling under a shared generative model~\c
 \section{Part I: Describing speech with explicit evidence}
 \label{sec:part1}
 \subsection{Annotation objects}
-Mindloom annotates a speaker's contribution in its supplied context through five layers: L1 records surface evidence atoms (a named feeling, a question form, an absolute expression), L2 aggregates them into features, L3 checks the evidence requirements (``bridges'') of each label, L4 assigns at most one configuration and L5 emits the typed output with its evidence trail or abstains with \emph{insufficient context}. Table~\ref{tab:labels} lists the ten labels. Eight are \emph{configurations} of a single contribution; SEAL is a \emph{function} (closure) that can co-occur with a configuration; SHIFT is an \emph{event} requiring before-and-after configuration evidence. SEEK and LOCK carry the invite/restrict contrast used later. SEAL differs from LOCK in scope: SEAL closes a topic or channel (``we're done''); LOCK keeps it open but constrains what may be said in it. Labels were historically called regimes; temporal-regime status is not established, and definitions concern \emph{what is said}, not motive.
+Mindloom annotates a speaker's contribution in its supplied context through five layers: L1 records surface evidence atoms (a named feeling, a question form, an absolute expression), L2 aggregates them into features, L3 checks the evidence requirements (``bridges'') of each label, L4 assigns at most one configuration and L5 emits the typed output with its evidence trail or abstains with \emph{insufficient context}. Figure~\ref{fig:l1l5} (Appendix~\ref{app:B}) gives the schematic with an illustrative trace. Table~\ref{tab:labels} lists the ten labels. Eight are \emph{configurations} of a single contribution; SEAL is a \emph{function} (closure) that can co-occur with a configuration; SHIFT is an \emph{event} requiring before-and-after configuration evidence. SEEK and LOCK carry the invite/restrict contrast used later. SEAL differs from LOCK in scope: SEAL closes a topic or channel (``we're done''); LOCK keeps it open but constrains what may be said in it. Labels were historically called regimes; temporal-regime status is not established, and definitions concern \emph{what is said}, not motive.
 
 \begin{table}[t]
 \centering\caption{Annotation targets. The wording states the descriptive target only; no label presumes an intent.}
@@ -275,6 +275,11 @@ Protective speech is a testable proposal when the protected expectation, the obs
 
 \section{Provenance, robustness and run configuration}
 \label{app:B}
+\begin{figure}[p]
+\centering\includegraphics[width=0.92\textwidth]{../figures/L1_L5_schematic.png}
+\caption{Inference path of the typed engine from L1 evidence atoms to L5 typed output. Left column: the five layers; a label whose bridge finds no supporting atom in the segment's own L1 record is blocked at L3, and L5 abstains if no configuration survives. Right column: an illustrative trace for a constructed line of trajectory~B (Sect.~1)---not an engine output and not a benchmark case.}
+\label{fig:l1l5}
+\end{figure}
 \begin{table}[h]
 \centering\caption{Benchmark construction, recomputed from the case files. Sources: Tier A \texttt{ood\_regime\_200}; Tier B \texttt{defense\_4mon}, \texttt{ood\_defense\_200}. Near-duplicates: word 5-gram Jaccard $\ge0.3$.}
 \label{tab:bench}
