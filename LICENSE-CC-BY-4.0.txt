@@ -1,0 +1,4 @@
+The manuscript text (paper/), figures (figures/) and documentation (docs/, *.md) in this repository are licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/.
+Attribution: Maria Svet, Mindloom Cognitive Lab, "Speech that Protects a Model", IWAI 2026.
+The camera-ready version published by Springer (LNCS/CCIS) is subject to the publisher's copyright form.

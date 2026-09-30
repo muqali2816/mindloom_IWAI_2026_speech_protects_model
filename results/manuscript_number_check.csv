@@ -1,0 +1,113 @@
+label,printed,source,decimals,match,in_tex
+T6 nonc_A honest,0.794,0.79399,3,True,True
+T6 nonc_A attenuated,0.981,0.980992,3,True,True
+T6 nonc_A costly,0.996,0.996379,3,True,True
+T6 nonc_A access,0.814,0.814446,3,True,True
+T6 A_dbelief honest,0.227,0.227104,3,True,True
+T6 A_dbelief attenuated,0.066,0.06568,3,True,True
+T6 A_dbelief costly,0.238,0.238098,3,True,True
+T6 A_dbelief access,0.208,0.207901,3,True,True
+T6 A_hidden_shift honest,0.083,0.082805,3,True,True
+T6 A_hidden_shift attenuated,0.057,0.056947,3,True,True
+T6 A_hidden_shift costly,0.222,0.221793,3,True,True
+T6 A_hidden_shift access,0.082,0.082212,3,True,True
+T6 evidence_count honest,2.64,2.636495,2,True,True
+T6 evidence_count attenuated,2.58,2.57567,2,True,True
+T6 evidence_count costly,2.73,2.728458,2,True,True
+T6 evidence_count access,2.09,2.085445,2,True,True
+T6 restrict_A honest,0.335,0.335083,3,True,True
+T6 restrict_A attenuated,0.354,0.35379,3,True,True
+T6 restrict_A costly,0.336,0.336049,3,True,True
+T6 restrict_A access,0.526,0.525766,3,True,True
+T6 A_p_truth honest,0.850,0.850357,3,True,True
+T6 A_p_truth attenuated,0.727,0.726662,3,True,True
+T6 A_p_truth costly,0.859,0.859091,3,True,True
+T6 A_p_truth access,0.828,0.828418,3,True,True
+T6 listener pC_high honest,0.230,0.229747,3,True,True
+T6 listener pC_high attenuated,0.320,0.319755,3,True,True
+T6 listener pC_high costly,0.452,0.45196,3,True,True
+T6 listener pC_high access,0.234,0.233738,3,True,True
+T6 listener pW_low honest,0.423,0.423465,3,True,True
+T6 listener pW_low attenuated,0.588,0.588098,3,True,True
+T6 listener pW_low costly,0.468,0.467824,3,True,True
+T6 listener pW_low access,0.435,0.435274,3,True,True
+access x access signals,1.75,1.7465,2,True,True
+honest x honest signals,2.60,2.6005,2,True,True
+gap diff,0.017,0.016545,3,True,True
+gap diff lo,0.008,0.007723,3,True,True
+gap diff hi,0.025,0.025367,3,True,True
+reassure costly,0.155,0.154839,3,True,True
+reassure lo,0.136,0.135848,3,True,True
+reassure hi,0.174,0.173829,3,True,True
+remove c costly,0.275,0.274552,3,True,True
+remove c lo,0.251,0.251124,3,True,True
+remove c hi,0.298,0.29798,3,True,True
+remove gamma access,0.199,0.199283,3,True,True
+remove gamma lo,0.174,0.173573,3,True,True
+remove gamma hi,0.225,0.224993,3,True,True
+ext obs attenuated,0.058,0.058061,3,True,True
+ext obs costly,0.092,0.092148,3,True,True
+ext obs access,0.120,0.119944,3,True,True
+remove gamma late restriction,-0.187,-0.187384,3,True,True
+force open access signals,0.127,0.126882,3,True,True
+force open min other,0.31,0.311828,2,True,True
+force open max other,0.33,0.333333,2,True,True
+force open access late restriction,0.067,0.067097,3,True,True
+T7 acts attenuated,0.612,0.612,3,True,True
+T7 labels attenuated,0.672,0.672,3,True,True
+T7 oracle attenuated,0.678,0.678,3,True,True
+T7 null attenuated,0.612,0.612,3,True,True
+T7 acts costly,0.690,0.6905,3,True,True
+T7 labels costly,0.765,0.765,3,True,True
+T7 oracle costly,0.785,0.785,3,True,True
+T7 null costly,0.690,0.6905,3,True,True
+T7 acts access,0.681,0.681,3,True,True
+T7 labels access,0.756,0.7565,3,True,True
+T7 oracle access,0.812,0.812,3,True,True
+T7 null access,0.681,0.681,3,True,True
+T7 acts access_x_access,0.630,0.6295,3,True,True
+T7 labels access_x_access,0.711,0.711,3,True,True
+T7 oracle access_x_access,0.762,0.762,3,True,True
+T7 null access_x_access,0.630,0.6295,3,True,True
+T7 acts costly_x_costly,0.700,0.7005,3,True,True
+T7 labels costly_x_costly,0.762,0.7625,3,True,True
+T7 oracle costly_x_costly,0.786,0.7865,3,True,True
+T7 null costly_x_costly,0.700,0.7005,3,True,True
+T7 sig gain labels attenuated,0.053,0.052706,3,True,True
+T7 sig gain oracle attenuated,0.098,0.097837,3,True,True
+T7 ratio attenuated,0.54,0.538709,2,True,True
+T7 sig gain labels costly,0.068,0.067973,3,True,True
+T7 sig gain oracle costly,0.127,0.127042,3,True,True
+T7 ratio costly,0.54,0.535039,2,True,True
+T7 sig gain labels access,0.050,0.04967,3,True,True
+T7 sig gain oracle access,0.084,0.083776,3,True,True
+T7 ratio access,0.59,0.592886,2,True,True
+T7 sig gain labels access_x_access,0.044,0.044193,3,True,True
+T7 sig gain oracle access_x_access,0.073,0.073003,3,True,True
+T7 ratio access_x_access,0.61,0.605363,2,True,True
+T7 sig gain labels costly_x_costly,0.085,0.084852,3,True,True
+T7 sig gain oracle costly_x_costly,0.161,0.161102,3,True,True
+T7 ratio costly_x_costly,0.53,0.526698,2,True,True
+n80 A_dbelief attenuated vs costly,17,17.0,0,True,True
+n80 B_pW_true attenuated vs costly,12,12.0,0,True,True
+n80 A_hidden_shift attenuated vs costly,17,17.0,0,True,True
+n80 nonc_A attenuated vs costly,200,200.0,0,True,True
+n80 restrict_A attenuated vs access,12,12.0,0,True,True
+n80 B_pW_true attenuated vs access,12,12.0,0,True,True
+n80 restrict_A costly vs access,12,12.0,0,True,True
+n80 B_pC_high costly vs access,12,12.0,0,True,True
+engine correct,129,129.0,0,True,True
+engine macroF1,0.757,0.757161,3,True,True
+prompt correct,145,145.0,0,True,True
+prompt macroF1,0.837,0.83697,3,True,True
+keyword acc,0.25,0.254438,2,True,True
+keyword macroF1,0.195,0.195117,3,True,True
+keyword correct,43,43.0,0,True,True
+keyword nonshift,43,43.0,0,True,True
+majority correct,20,20.0,0,True,True
+random correct,17,17.0,0,True,True
+random macroF1,0.099,0.098543,3,True,True
+majority macroF1,0.021,0.021164,3,True,True
+tierB near dups,15,15.0,0,True,True
+tierA words max,71,71.0,0,True,True
+tierB words max,47,47.0,0,True,True

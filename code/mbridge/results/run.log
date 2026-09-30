@@ -1,0 +1,29 @@
+               condition  p_truth  disagreement  evidence_count  restriction_rate  late_nonconcession  late_ask  persistent_disagreement
+               reference   0.7076        0.2934          2.7010            0.3310              0.7490    0.0483                   0.1965
+             attenuation   0.5251        0.4958          2.4970            0.3544              0.9939    0.0444                   1.0000
+         concession_cost   0.7120        0.2855          2.9930            0.3295              0.9952    0.1268                   0.2045
+       access_protection   0.6580        0.3501          1.8205            0.5046              0.8104    0.0460                   0.2510
+            one_protects   0.6696        0.3355          2.0565            0.4440              0.7944    0.0469                   0.2425
+both_protect_no_coupling   0.7748        0.2199          4.2710            0.3533              0.6716    0.0029                   0.1325
+      both_protect_no_IG   0.6545        0.3519          1.7900            0.5167              0.8121    0.0464                   0.2530
+         reference_no_IG   0.6962        0.3047          2.5430            0.3539              0.7598    0.0449                   0.2070
+    remove_exposure_cost   0.6802        0.3249          2.2250            0.4198              0.7911    0.0547                   0.2305
+            force_A_open   0.6693        0.3372          2.0330            0.4097              0.7968    0.0412                   0.2260
+           bypass_access   0.8548        0.1460          6.4395            0.4310              0.6362    0.0264                   0.0770
+Observer reference actions acc 0.547 loss 0.4991 seconds 0.3
+Observer reference labels acc 0.679 loss 0.4616 seconds 0.3
+Observer reference oracle acc 0.783 loss 0.3725 seconds 0.3
+Observer reference null_labels acc 0.547 loss 0.4991 seconds 0.3
+Observer attenuation actions acc 0.8865 loss 0.4808 seconds 0.3
+Observer attenuation labels acc 0.8875 loss 0.4477 seconds 0.3
+Observer attenuation oracle acc 0.899 loss 0.3669 seconds 0.3
+Observer attenuation null_labels acc 0.8865 loss 0.4808 seconds 0.3
+Observer concession_cost actions acc 0.902 loss 0.5274 seconds 0.3
+Observer concession_cost labels acc 0.9135 loss 0.4829 seconds 0.3
+Observer concession_cost oracle acc 0.9215 loss 0.3597 seconds 0.3
+Observer concession_cost null_labels acc 0.902 loss 0.5274 seconds 0.3
+Observer access_protection actions acc 0.6845 loss 0.3981 seconds 0.3
+Observer access_protection labels acc 0.7665 loss 0.3627 seconds 0.3
+Observer access_protection oracle acc 0.907 loss 0.2985 seconds 0.3
+Observer access_protection null_labels acc 0.6845 loss 0.3981 seconds 0.3
+All experiment and control checks finished.

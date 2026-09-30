@@ -1,0 +1,236 @@
+{
+ "reassure_minus_placebo__P_concede_A_late": {
+  "honest": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.15483870967741936,
+   "lo": 0.1358483034466771,
+   "hi": 0.17382911590816164,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  }
+ },
+ "remove_c__P_concede_A_late": {
+  "honest": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.2745519713261649,
+   "lo": 0.25112370673831885,
+   "hi": 0.2979802359140109,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  }
+ },
+ "remove_gamma__evidence_count_late": {
+  "honest": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.1992831541218638,
+   "lo": 0.17357327209872203,
+   "hi": 0.22499303614500554,
+   "moves": true
+  }
+ },
+ "remove_gamma__A_p_truth": {
+  "honest": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.007879610659639335,
+   "lo": 0.004116111097794094,
+   "hi": 0.011643110221484575,
+   "moves": true
+  }
+ },
+ "force_open_B__evidence_count_late": {
+  "honest": {
+   "delta": 0.31899641577060933,
+   "lo": 0.28988322471180183,
+   "hi": 0.34810960682941683,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.3118279569892473,
+   "lo": 0.28332132653570685,
+   "hi": 0.3403345874427878,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.3333333333333333,
+   "lo": 0.3033854931327747,
+   "hi": 0.36328117353389194,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.12688172043010754,
+   "lo": 0.10049150272581692,
+   "hi": 0.15327193813439816,
+   "moves": true
+  }
+ },
+ "force_open_B__A_p_truth": {
+  "honest": {
+   "delta": 0.0081063043092866,
+   "lo": 0.003860228708156086,
+   "hi": 0.012352379910417113,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.0036891561433526317,
+   "lo": 0.00263829303828621,
+   "hi": 0.004740019248419053,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.005819726621745311,
+   "lo": 0.0020690414396431285,
+   "hi": 0.009570411803847495,
+   "moves": true
+  },
+  "access": {
+   "delta": -0.0004173570719206326,
+   "lo": -0.004225083560129218,
+   "hi": 0.003390369416287953,
+   "moves": false
+  }
+ },
+ "external_obs__A_dbelief": {
+  "honest": {
+   "delta": 0.07777401006261969,
+   "lo": 0.06784448196796139,
+   "hi": 0.087703538157278,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.053502390964052855,
+   "lo": 0.05012908248743609,
+   "hi": 0.05687569944066962,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.0678398882743736,
+   "lo": 0.05850345686356743,
+   "hi": 0.07717631968517977,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.09284647672125158,
+   "lo": 0.08263260715365667,
+   "hi": 0.1030603462888465,
+   "moves": true
+  }
+ },
+ "external_obs__A_p_truth": {
+  "honest": {
+   "delta": 0.10681043096609834,
+   "lo": 0.09497291578828553,
+   "hi": 0.11864794614391115,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 0.05806136424082505,
+   "lo": 0.05450313119944097,
+   "hi": 0.061619597282209136,
+   "moves": true
+  },
+  "costly": {
+   "delta": 0.09214787496669856,
+   "lo": 0.08111467964524685,
+   "hi": 0.10318107028815027,
+   "moves": true
+  },
+  "access": {
+   "delta": 0.1199441763127664,
+   "lo": 0.10753345872236147,
+   "hi": 0.13235489390317132,
+   "moves": true
+  }
+ },
+ "bypass__evidence_count_late": {
+  "honest": {
+   "delta": 3.503942652329749,
+   "lo": 3.449602767765023,
+   "hi": 3.5582825368944753,
+   "moves": true
+  },
+  "attenuated": {
+   "delta": 3.5168458781362006,
+   "lo": 3.462731388943745,
+   "hi": 3.5709603673286563,
+   "moves": true
+  },
+  "costly": {
+   "delta": 3.4279569892473116,
+   "lo": 3.372026587148954,
+   "hi": 3.4838873913456694,
+   "moves": true
+  },
+  "access": {
+   "delta": 3.7261648745519715,
+   "lo": 3.6754219372665893,
+   "hi": 3.776907811837354,
+   "moves": true
+  }
+ }
+}

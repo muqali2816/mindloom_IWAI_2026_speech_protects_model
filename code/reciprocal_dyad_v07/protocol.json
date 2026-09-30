@@ -1,0 +1,153 @@
+{
+ "name": "reciprocal_dyad_v07",
+ "written": "2026-09-30",
+ "status": "local pre-specification written before implementation and before any run; not an external preregistration",
+ "lineage": "v0.4 channel -> v0.5 calibrated listener -> v0.6 latent cost + active listener -> v0.7 reciprocal level-1 dyad + speech-label observation layer",
+ "common_parameters": {
+  "self_prior": 0.75,
+  "n_private": 4,
+  "private_reliability": 0.75,
+  "trusted_precision": 0.7,
+  "misrepresentation_cost": 2.0,
+  "choice_temperature": 0.2,
+  "pressure_base": 1.1,
+  "silence_base": 1.1,
+  "reassure_base": 1.1,
+  "cost_grid": [
+   0.0,
+   0.8,
+   1.6
+  ],
+  "omega_grid": [
+   0.2,
+   0.6,
+   1.0
+  ],
+  "beta_active": 1.5
+ },
+ "rounds": 12,
+ "tail_rounds": 4,
+ "n_worlds": 2000,
+ "seeds": {
+  "E1": 20261001,
+  "E2": 20261002,
+  "E3": 20261003,
+  "E4": 20261004,
+  "E5": 20261005,
+  "regression": 20260927
+ },
+ "agent_types": {
+  "honest": {
+   "omega": 1.0,
+   "c": 0.0
+  },
+  "attenuated": {
+   "omega": 0.2,
+   "c": 0.0
+  },
+  "costly": {
+   "omega": 1.0,
+   "c": 1.6
+  },
+  "mixed": {
+   "omega": 0.6,
+   "c": 0.8
+  }
+ },
+ "experiments": {
+  "E1_phase_map": {
+   "pairs": "all 4x4 type pairs (A type x B type)",
+   "beta": [
+    0.0,
+    1.5
+   ],
+   "outcomes": [
+    "tail mutual non-concession",
+    "|q_A - q_B| final",
+    "p_true A/B",
+    "worlds with no concession by either",
+    "distance to oracle",
+    "transparency error"
+   ]
+  },
+  "E2_recovery": {
+   "generators": "4 agent types for A with B honest; and the 4 symmetric pairs",
+   "channels": [
+    "acts+private",
+    "acts",
+    "labels g=0",
+    "labels g=0.25",
+    "labels g=0.5",
+    "labels g=1.0"
+   ],
+   "noise": [
+    "none",
+    "engine",
+    "baseline"
+   ],
+   "n_worlds_per_generator": 2000
+  },
+  "E3_interventions": {
+   "list": [
+    "partner REASSURE forced at round 7",
+    "placebo framing (no relief)",
+    "c removed from round 7 for A / for both",
+    "external observation rho=0.95 at round 7 to both"
+   ]
+  },
+  "E4_regimes": {
+   "criteria": "persistence of mutual non-concession state, transition rates, hysteresis under cost removal/restoration, next-act forecast vs last-act baseline on held-out worlds"
+  },
+  "E5_sensitivity": {
+   "tau": [
+    0.1,
+    0.2,
+    0.4
+   ],
+   "k": [
+    1.0,
+    2.0
+   ],
+   "lambda": [
+    0.6,
+    0.7,
+    0.85
+   ],
+   "rounds": [
+    12,
+    24
+   ]
+  }
+ },
+ "predictions": {
+  "P1": "The costly x costly pair shows the highest tail mutual non-concession of all pairs AND the largest hidden shift (|belief change| with unchanged public position); the attenuated x attenuated pair shows high non-concession with near-zero belief change. Reciprocal amplification: costly x costly non-concession exceeds the value predicted by adding the two single-agent (vs honest partner) effects.",
+  "P2": "A partner's REASSURE lowers public non-concession only for a costly agent (c>0); for an attenuated agent it leaves both acts and beliefs unchanged. A placebo framing produces no change in either.",
+  "P3": "Mechanism recovery from labels: at g=0 with no noise equals recovery from acts (check). Labels exceed acts only when g>0; under the engine confusion matrix the gain at g=0.5 is at most half of the noiseless gain; under any noise level, labels never exceed acts+private.",
+  "P4": "Mutual non-concession persists (tail persistence > 0.9) only in pairs with at least one costly or attenuated agent; hysteresis: after cost removal and restoration the concession rate does not return to the pre-removal value within 4 rounds only for the costly x costly pair.",
+  "P5": "Each agent's transparency error (estimated vs actual partner belief) is largest when the partner is attenuated, because the level-0 model attributes non-updating to private records or cost rather than to omega on the partner's side (omega is on the grid, so this is a test of whether it is recovered)."
+ },
+ "validation_checks": [
+  "regression_to_v06_beta0_4acts",
+  "regression_to_v06_latent_beta1.5",
+  "omega_zero_no_belief_change",
+  "c_large_no_concession",
+  "role_swap_symmetry",
+  "labels_g0_noiseless_equal_acts_recovery",
+  "policy_normalisation",
+  "IG_nonnegative",
+  "scalar_reimplementation_single_world",
+  "seed_repeatability"
+ ],
+ "amendments": [
+  {
+   "date": "2026-09-30",
+   "before_experiments": true,
+   "what": "Attenuation rule changed from act-likelihood tempering to marginal-shrink (MODEL_SPEC §4 note) after calibration showed tempering cannot cap the influence of repeated partner assertions; grids unchanged."
+  },
+  {
+   "date": "2026-09-30",
+   "before_experiments": true,
+   "what": "P3 check 'labels at g=0 without noise equal acts recovery' is unattainable because E0 is not invertible (LOCK <- ASSERT|PRESSURE, INSUFF <- any); replaced by 'labels at g=0 <= acts recovery, and emission_matrix independent of mechanism at g=0'. The labels observer is a plug-in decoder (observer.py docstring), a lower bound."
+  }
+ ]
+}

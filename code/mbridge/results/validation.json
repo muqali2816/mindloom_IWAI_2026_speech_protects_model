@@ -1,0 +1,17 @@
+{
+  "reference_null_posterior_max_error": 8.992806499463768e-15,
+  "reference_null_prediction_max_error": 1.8318679906315083e-15,
+  "attenuation_null_posterior_max_error": 6.661338147750939e-15,
+  "attenuation_null_prediction_max_error": 7.771561172376096e-16,
+  "concession_cost_null_posterior_max_error": 6.994405055138486e-15,
+  "concession_cost_null_prediction_max_error": 1.3877787807814457e-15,
+  "access_protection_null_posterior_max_error": 1.149080830487037e-14,
+  "access_protection_null_prediction_max_error": 1.6653345369377348e-15,
+  "reference_state_independent_channel_error": 9.769962616701378e-15,
+  "attenuation_state_independent_channel_error": 9.603429163007604e-15,
+  "concession_cost_state_independent_channel_error": 6.994405055138486e-15,
+  "access_protection_state_independent_channel_error": 7.549516567451064e-15,
+  "agent0_partner_form_policy_effect": 0.4755275214490623,
+  "agent1_partner_form_policy_effect": 0.47552752144906235,
+  "empirical_channel_rows_disjoint": true
+}

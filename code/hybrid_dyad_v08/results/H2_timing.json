@@ -1,0 +1,65 @@
+{
+ "honest": {
+  "acts": 52.2,
+  "labels_eta0.25": 54.4,
+  "oracle": 56.2,
+  "null": 56.2,
+  "labels_eta0": 56.4,
+  "labels_eta0.5": 56.7,
+  "labels_eta1": 27.3
+ },
+ "attenuated": {
+  "acts": 52.6,
+  "labels_eta0.25": 54.8,
+  "oracle": 56.2,
+  "null": 56.6,
+  "labels_eta0": 56.8,
+  "labels_eta0.5": 57.1,
+  "labels_eta1": 27.2
+ },
+ "costly": {
+  "acts": 52.4,
+  "labels_eta0.25": 55.1,
+  "oracle": 56.3,
+  "null": 56.3,
+  "labels_eta0": 56.8,
+  "labels_eta0.5": 57.1,
+  "labels_eta1": 27.2
+ },
+ "access": {
+  "acts": 52.3,
+  "labels_eta0.25": 54.7,
+  "oracle": 56.1,
+  "null": 56.2,
+  "labels_eta0": 56.7,
+  "labels_eta0.5": 56.9,
+  "labels_eta1": 27.5
+ },
+ "mixed": {
+  "acts": 52.4,
+  "labels_eta0.25": 54.3,
+  "oracle": 56.2,
+  "null": 56.5,
+  "labels_eta0": 56.7,
+  "labels_eta0.5": 56.7,
+  "labels_eta1": 27.2
+ },
+ "access_x_access": {
+  "acts": 52.4,
+  "labels_eta0.25": 54.6,
+  "oracle": 56.6,
+  "null": 56.4,
+  "labels_eta0": 56.7,
+  "labels_eta0.5": 57.0,
+  "labels_eta1": 27.3
+ },
+ "costly_x_costly": {
+  "acts": 52.2,
+  "labels_eta0.25": 54.4,
+  "oracle": 56.3,
+  "null": 56.6,
+  "labels_eta0": 56.8,
+  "labels_eta0.5": 57.1,
+  "labels_eta1": 27.4
+ }
+}

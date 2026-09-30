@@ -1,0 +1,64 @@
+{
+ "seed": 20261004,
+ "n_worlds": 2000,
+ "rounds": 24,
+ "tail_rounds_metrics": 4,
+ "tail8_for_persistence": 8,
+ "min_run": 6,
+ "intervention": {
+  "remove_c_from": 7,
+  "restore_c_from": 10,
+  "remove_c_for": [
+   "A",
+   "B"
+  ]
+ },
+ "pre_window_code_rounds": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "betas": [
+  0.0,
+  1.5
+ ],
+ "forecast_train_worlds": "index < 1000",
+ "forecast_test_worlds": "index >= 1000",
+ "forecast_smoothing_alpha": 0.5,
+ "timing_s": {
+  "E4_honestxhonest_beta0.0": 0.34,
+  "E4_honestxattenuated_beta0.0": 0.35,
+  "E4_honestxcostly_beta0.0": 0.35,
+  "E4_honestxmixed_beta0.0": 0.35,
+  "E4_attenuatedxhonest_beta0.0": 0.34,
+  "E4_attenuatedxattenuated_beta0.0": 0.34,
+  "E4_attenuatedxcostly_beta0.0": 0.36,
+  "E4_attenuatedxmixed_beta0.0": 0.35,
+  "E4_costlyxhonest_beta0.0": 0.34,
+  "E4_costlyxattenuated_beta0.0": 0.36,
+  "E4_costlyxcostly_beta0.0": 0.35,
+  "E4_costlyxmixed_beta0.0": 0.35,
+  "E4_mixedxhonest_beta0.0": 0.35,
+  "E4_mixedxattenuated_beta0.0": 0.35,
+  "E4_mixedxcostly_beta0.0": 0.36,
+  "E4_mixedxmixed_beta0.0": 0.36,
+  "E4_honestxhonest_beta1.5": 2.42,
+  "E4_honestxattenuated_beta1.5": 2.55,
+  "E4_honestxcostly_beta1.5": 2.44,
+  "E4_honestxmixed_beta1.5": 2.66,
+  "E4_attenuatedxhonest_beta1.5": 2.6,
+  "E4_attenuatedxattenuated_beta1.5": 2.74,
+  "E4_attenuatedxcostly_beta1.5": 2.57,
+  "E4_attenuatedxmixed_beta1.5": 2.71,
+  "E4_costlyxhonest_beta1.5": 2.42,
+  "E4_costlyxattenuated_beta1.5": 2.57,
+  "E4_costlyxcostly_beta1.5": 2.37,
+  "E4_costlyxmixed_beta1.5": 2.56,
+  "E4_mixedxhonest_beta1.5": 2.54,
+  "E4_mixedxattenuated_beta1.5": 2.7,
+  "E4_mixedxcostly_beta1.5": 2.55,
+  "E4_mixedxmixed_beta1.5": 2.69
+ },
+ "total_s": 93.2
+}

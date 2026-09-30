@@ -1,0 +1,29 @@
+{
+ "target": 0.9809920347574221,
+ "typical_nonc_A_own0": {
+  "attenuated": 0.9809920347574221,
+  "costly": 0.99637943519189,
+  "access": 0.8144460535843592
+ },
+ "chosen": {
+  "attenuated": {
+   "param": "omega",
+   "value": 0.2,
+   "nonc_A_own0": 0.9809920347574221,
+   "residual": 0.0
+  },
+  "costly": {
+   "param": "c",
+   "value": 1.2,
+   "nonc_A_own0": 0.9856987690079653,
+   "residual": 0.004706734250543132
+  },
+  "access": {
+   "param": "gamma",
+   "value": 8.0,
+   "nonc_A_own0": 0.8329109341057205,
+   "residual": -0.14808110065170166
+  }
+ },
+ "attainable": false
+}

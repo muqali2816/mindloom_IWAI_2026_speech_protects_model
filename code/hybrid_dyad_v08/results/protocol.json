@@ -1,0 +1,112 @@
+{
+ "name": "hybrid_dyad_v08",
+ "written": "2026-09-30",
+ "status": "local pre-specification before implementation and before any run; not an external preregistration; no human data",
+ "parents": {
+  "M_bridge": "Mindloom_dyadic_bridge_2026-09-30 (dyad_model.py)",
+  "v07": "reciprocal_dyad v0.7 (core.py)"
+ },
+ "common_parameters": {
+  "self_prior": 0.75,
+  "n_private": 2,
+  "private_reliability": 0.75,
+  "trusted_precision": 0.7,
+  "misrepresentation_cost": 2.0,
+  "choice_temperature": 0.2,
+  "nonfactual_base": 1.1,
+  "restriction_cost": 0.12,
+  "lam_low": 0.35,
+  "lam_ask": 0.9,
+  "lam_floor": 0.05,
+  "cost_grid": [
+   0.0,
+   0.8,
+   1.6
+  ],
+  "omega_grid": [
+   0.2,
+   0.6,
+   1.0
+  ],
+  "gamma_grid": [
+   1.0,
+   2.0,
+   4.0
+  ],
+  "beta_active": 1.5
+ },
+ "acts": [
+  "ASSERT",
+  "CONCEDE",
+  "PRESSURE",
+  "SILENCE",
+  "ASK",
+  "REASSURE"
+ ],
+ "forms": {
+  "0": "restrict",
+  "1": "invite"
+ },
+ "rounds": 12,
+ "tail_rounds": 4,
+ "n_worlds": 2000,
+ "order": "sim",
+ "seeds": {
+  "H1": 20261011,
+  "H2": 20261012,
+  "H3": 20261013,
+  "H4": 20261014,
+  "labels": 20261015
+ },
+ "agent_types": {
+  "honest": {
+   "omega": 1.0,
+   "c": 0.0,
+   "gamma": 0.0
+  },
+  "attenuated": {
+   "omega": 0.2,
+   "c": 0.0,
+   "gamma": 0.0
+  },
+  "costly": {
+   "omega": 1.0,
+   "c": 1.6,
+   "gamma": 0.0
+  },
+  "access": {
+   "omega": 1.0,
+   "c": 0.0,
+   "gamma": 2.0
+  },
+  "mixed": {
+   "omega": 0.6,
+   "c": 0.8,
+   "gamma": 1.0
+  }
+ },
+ "label_channel": {
+  "restrict_row": "regime.LOCK (15 cases)",
+  "invite_row": "regime.SEEK (20 cases)",
+  "generation": "per-world Dirichlet(counts+0.5) rows",
+  "observer": "posterior-mean rows mixed with background at eta in [0, 0.25, 0.5]"
+ },
+ "predictions": {
+  "P1": "With the partner honest and non-concession matched (speaker starts on own side), the three mechanisms separate on distinct channels: attenuated -> smallest private belief change; costly -> largest hidden shift; access-protecting -> fewest shared signals and highest restriction rate, with belief change intermediate (learning fails through access, not sensitivity).",
+  "P2": "Access-protecting x access-protecting yields the fewest shared signals of all pairs and a persistent belief gap larger than honest x honest; access protection by one agent alone already lowers the pair's signal count because lambda requires both invitations (product rule).",
+  "P3": "Form labels improve next-signal prediction and family recovery over acts+signals for every generator; null labels give exactly zero gain; oracle forms bound the gain; the labels-to-oracle ratio is 0.25-0.5 at eta=0.25 and decreases with eta. Labels help identify access protection most (its signature is the form), attenuation least.",
+  "P4": "Interventions separate mechanisms: partner's REASSURE and cost removal move only costly; forced partner openness and gamma removal move only access-protecting (more signals, higher p_true); shared strong evidence moves attenuated least. Listener's posterior on the speaker's mechanism distinguishes costly from others cheaply; access protection is visible to the listener mainly via observed forms, not acts."
+ },
+ "validation_checks": [
+  "regression_to_Mbridge_4_hypotheses_and_interventions",
+  "regression_to_v07_latent_beta1.5",
+  "omega_zero_no_belief_change",
+  "c_large_no_unrelieved_concession",
+  "role_swap_symmetry_sim",
+  "bruteforce_paths_equals_filter",
+  "null_labels_zero_gain",
+  "coupling_off_zero_gain",
+  "scalar_policy_single_world",
+  "seed_repeatability"
+ ]
+}

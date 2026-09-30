@@ -1,0 +1,17 @@
+generator,observation,accuracy,p_true_family
+reference,actions,0.547,0.5366964617054553
+reference,labels,0.679,0.6541606601691006
+reference,oracle,0.783,0.7940955496165841
+reference,null_labels,0.547,0.5366964617054552
+attenuation,actions,0.8865,0.8635306578370362
+attenuation,labels,0.8875,0.8664054111313347
+attenuation,oracle,0.899,0.8728176204688346
+attenuation,null_labels,0.8865,0.8635306578370362
+concession_cost,actions,0.902,0.8193535614515612
+concession_cost,labels,0.9135,0.831071387253228
+concession_cost,oracle,0.9215,0.8463099483753022
+concession_cost,null_labels,0.902,0.8193535614515612
+access_protection,actions,0.6845,0.5096541547385854
+access_protection,labels,0.7665,0.642263110719174
+access_protection,oracle,0.907,0.8349512463664858
+access_protection,null_labels,0.6845,0.5096541547385854

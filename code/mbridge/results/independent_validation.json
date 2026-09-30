@@ -1,0 +1,13 @@
+{
+  "scalar_policy_max_error": 3.3306690738754696e-16,
+  "brute_paths_actions_error": 3.3306690738754696e-16,
+  "brute_paths_labels_error": 5.551115123125783e-16,
+  "no_coupling_reference_posterior_error": 7.105427357601002e-15,
+  "no_coupling_reference_prediction_error": 5.551115123125783e-16,
+  "no_coupling_attenuation_posterior_error": 8.1601392309949e-15,
+  "no_coupling_attenuation_prediction_error": 4.440892098500626e-16,
+  "no_coupling_concession_cost_posterior_error": 5.384581669432009e-15,
+  "no_coupling_concession_cost_prediction_error": 4.440892098500626e-16,
+  "no_coupling_access_protection_posterior_error": 5.218048215738236e-15,
+  "no_coupling_access_protection_prediction_error": 4.440892098500626e-16
+}

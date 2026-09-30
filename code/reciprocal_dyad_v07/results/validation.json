@@ -1,0 +1,13 @@
+{
+ "regression_to_v06_beta0_4acts": true,
+ "regression_to_v06_latent_beta1.5": true,
+ "omega_zero_no_belief_change": true,
+ "c_large_no_concession": true,
+ "role_swap_symmetry": true,
+ "labels_g0_noiseless_equal_acts_recovery": true,
+ "policy_normalisation": true,
+ "IG_nonnegative": true,
+ "scalar_reimplementation_single_world": true,
+ "seed_repeatability": true,
+ "all_passed": true
+}

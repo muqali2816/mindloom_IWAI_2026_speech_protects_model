@@ -1,0 +1,25 @@
+split,channel,condition,metric,n_per_group_80pct,mean_attenuated,mean_costly,cohen_d
+all,tail non-concession A (base),base,nonc_A,17,0.632875,0.988375,1.0800223005764198
+all,A pressure rate (base),base,A_pressure,17,0.017208333333333332,0.1514166666666667,1.0386245470098614
+all,A silence rate (base),base,A_silence,17,0.019666666666666666,0.15591666666666668,1.0256677580103735
+all,A assert rate (base),base,A_assert,not reached; power 0.32 at 400,0.582375,0.534,-0.1036398327744931
+all,A private belief change |dq| (base),base,A_dbelief,25,0.03443534704862414,0.14585506394166178,0.8903031329835984
+all,A truth-weighted belief (base),base,A_p_truth,140,0.8104523706914939,0.8935709451374153,0.3435315647329281
+all,A concession in 8-12 after cost removal (remove_c_A),remove_c_A,conc_A_8_12,not reached; power 0.62 at 400,0.4025,0.482,0.16054628949687877
+all,A concession in 9-12 after partner reassure (reassure),reassure,conc_A_9_12,not reached; power 0.05 at 400,0.3945,0.3925,-0.004092932042213241
+all,A truth-weighted belief after external evidence (external),external,A_p_truth,not reached; power 0.43 at 400,0.9415438383364486,0.9608596521782448,0.12341972527237988
+all,listener: P_B(c_A = 1.6) (base),base,B_pC16,8,0.20481848250334994,0.6297612967456583,1.6651205753632856
+all,listener: P_B(omega_A = 0.2) (base),base,B_pW02,140,0.4164147229908639,0.35385500279422616,-0.34608922832513
+all,listener: posterior mean c_A (base),base,B_cmean,8,0.5349653064479251,1.1680039034823513,1.6584799763935443
+A_own0,tail non-concession A (base),base,nonc_A,not reached; power 0.66 at 400,0.9944897959183674,0.9991836734693877,0.1632223651561329
+A_own0,A pressure rate (base),base,A_pressure,100,0.014761904761904757,0.049727891156462575,0.41344375136800665
+A_own0,A silence rate (base),base,A_silence,100,0.017687074829931974,0.050816326530612244,0.38484615849745135
+A_own0,A assert rate (base),base,A_assert,70,0.9489115646258504,0.850204081632653,-0.45211777514782386
+A_own0,A private belief change |dq| (base),base,A_dbelief,25,0.03686437841924394,0.1512919858808223,0.7788079904604455
+A_own0,A truth-weighted belief (base),base,A_p_truth,200,0.7992808736367261,0.8781246645340013,0.2911796636291246
+A_own0,A concession in 8-12 after cost removal (remove_c_A),remove_c_A,conc_A_8_12,70,0.024489795918367346,0.16816326530612244,0.5018699547867121
+A_own0,A concession in 9-12 after partner reassure (reassure),reassure,conc_A_9_12,400,0.011428571428571429,0.05551020408163265,0.2468506893287087
+A_own0,A truth-weighted belief after external evidence (external),external,A_p_truth,not reached; power 0.49 at 400,0.9377808824834697,0.960187273920499,0.14271015159975312
+A_own0,listener: P_B(c_A = 1.6) (base),base,B_pC16,50,0.33439752164123326,0.4264352071846186,0.581080750402614
+A_own0,listener: P_B(omega_A = 0.2) (base),base,B_pW02,70,0.4562516308838362,0.3533938994028218,-0.4866626784870144
+A_own0,listener: posterior mean c_A (base),base,B_cmean,50,0.8065211661905736,0.9229597845284259,0.5520949884643379

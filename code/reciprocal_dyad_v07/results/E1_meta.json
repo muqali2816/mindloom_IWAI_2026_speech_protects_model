@@ -1,0 +1,64 @@
+{
+ "seed": 20261001,
+ "n_worlds": 2000,
+ "rounds": 12,
+ "tail_rounds": 4,
+ "betas": [
+  0.0,
+  1.5
+ ],
+ "types": {
+  "honest": {
+   "omega": 1.0,
+   "c": 0.0
+  },
+  "attenuated": {
+   "omega": 0.2,
+   "c": 0.0
+  },
+  "costly": {
+   "omega": 1.0,
+   "c": 1.6
+  },
+  "mixed": {
+   "omega": 0.6,
+   "c": 0.8
+  }
+ },
+ "attenuation_rule": "shrink",
+ "timing_s": {
+  "E1_honestxhonest_beta0.0": 0.2,
+  "E1_honestxattenuated_beta0.0": 0.2,
+  "E1_honestxcostly_beta0.0": 0.2,
+  "E1_honestxmixed_beta0.0": 0.2,
+  "E1_attenuatedxhonest_beta0.0": 0.2,
+  "E1_attenuatedxattenuated_beta0.0": 0.2,
+  "E1_attenuatedxcostly_beta0.0": 0.2,
+  "E1_attenuatedxmixed_beta0.0": 0.21,
+  "E1_costlyxhonest_beta0.0": 0.2,
+  "E1_costlyxattenuated_beta0.0": 0.21,
+  "E1_costlyxcostly_beta0.0": 0.2,
+  "E1_costlyxmixed_beta0.0": 0.21,
+  "E1_mixedxhonest_beta0.0": 0.2,
+  "E1_mixedxattenuated_beta0.0": 0.21,
+  "E1_mixedxcostly_beta0.0": 0.2,
+  "E1_mixedxmixed_beta0.0": 0.21,
+  "E1_honestxhonest_beta1.5": 1.21,
+  "E1_honestxattenuated_beta1.5": 1.28,
+  "E1_honestxcostly_beta1.5": 1.19,
+  "E1_honestxmixed_beta1.5": 1.29,
+  "E1_attenuatedxhonest_beta1.5": 1.29,
+  "E1_attenuatedxattenuated_beta1.5": 1.39,
+  "E1_attenuatedxcostly_beta1.5": 1.31,
+  "E1_attenuatedxmixed_beta1.5": 1.38,
+  "E1_costlyxhonest_beta1.5": 1.26,
+  "E1_costlyxattenuated_beta1.5": 1.31,
+  "E1_costlyxcostly_beta1.5": 1.23,
+  "E1_costlyxmixed_beta1.5": 1.3,
+  "E1_mixedxhonest_beta1.5": 1.3,
+  "E1_mixedxattenuated_beta1.5": 1.38,
+  "E1_mixedxcostly_beta1.5": 1.3,
+  "E1_mixedxmixed_beta1.5": 1.38
+ },
+ "total_s": 24.8
+}

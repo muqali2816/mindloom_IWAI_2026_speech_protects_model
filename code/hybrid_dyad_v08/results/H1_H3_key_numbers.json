@@ -1,0 +1,434 @@
+{
+ "target": 0.9809920347574221,
+ "chosen": {
+  "attenuated": {
+   "param": "omega",
+   "value": 0.2,
+   "nonc_A_own0": 0.9809920347574221,
+   "residual": 0.0
+  },
+  "costly": {
+   "param": "c",
+   "value": 1.2,
+   "nonc_A_own0": 0.9856987690079653,
+   "residual": 0.004706734250543132
+  },
+  "access": {
+   "param": "gamma",
+   "value": 8.0,
+   "nonc_A_own0": 0.8329109341057205,
+   "residual": -0.14808110065170166
+  }
+ },
+ "typical_nonc_A_own0": {
+  "attenuated": 0.9809920347574221,
+  "costly": 0.99637943519189,
+  "access": 0.8144460535843592
+ },
+ "honest_nonc_A_own0": 0.7939898624185373,
+ "H1_A_own0": {
+  "honest": {
+   "evidence_count": 2.6364952932657495,
+   "mean_rate": 0.2150102582669563,
+   "restrict_A": 0.3350832729905865,
+   "restrict_joint": 0.5523775042239922,
+   "A_p_truth": 0.850356571907655,
+   "A_dbelief": 0.2271038958265088,
+   "A_hidden_shift": 0.0828047373446282,
+   "nonc_A": 0.7939898624185373,
+   "A_ASK": 0.030231716147719,
+   "B_p_truth": 0.8275152900687242,
+   "belief_gap_final": 0.1428888963017945
+  },
+  "attenuated": {
+   "evidence_count": 2.5756698044895003,
+   "mean_rate": 0.2102401641322712,
+   "restrict_A": 0.3537895244991552,
+   "restrict_joint": 0.5652908520395848,
+   "A_p_truth": 0.726661553402404,
+   "A_dbelief": 0.0656802187081559,
+   "A_hidden_shift": 0.0569473785278896,
+   "nonc_A": 0.980992034757422,
+   "A_ASK": 0.0251025826695631,
+   "B_p_truth": 0.8094505808417741,
+   "belief_gap_final": 0.2321899723229035
+  },
+  "costly": {
+   "evidence_count": 2.728457639391745,
+   "mean_rate": 0.2227703355056722,
+   "restrict_A": 0.3360487569394159,
+   "restrict_joint": 0.5534636736664253,
+   "A_p_truth": 0.859090535939089,
+   "A_dbelief": 0.2380977594867393,
+   "A_hidden_shift": 0.2217930419271947,
+   "nonc_A": 0.99637943519189,
+   "A_ASK": 0.069575187062515,
+   "B_p_truth": 0.8288910994520527,
+   "belief_gap_final": 0.1276210198105502
+  },
+  "access": {
+   "evidence_count": 2.0854453294713977,
+   "mean_rate": 0.1696566497706975,
+   "restrict_A": 0.5257663528843833,
+   "restrict_joint": 0.6853125754284336,
+   "A_p_truth": 0.8284179877827511,
+   "A_dbelief": 0.2079005341537393,
+   "A_hidden_shift": 0.0822121999563111,
+   "nonc_A": 0.8144460535843592,
+   "A_ASK": 0.0217837315954622,
+   "B_p_truth": 0.8107723013385683,
+   "belief_gap_final": 0.1576727728683886
+  }
+ },
+ "P2": {
+  "access_access_ev": 1.7465,
+  "honest_honest_ev": 2.6005,
+  "honest_access_ev": 1.988,
+  "access_honest_ev": 1.9815,
+  "gap_aa": 0.1383087125185778,
+  "gap_hh": 0.1217635982911716,
+  "gap_diff": 0.01654511422740619,
+  "gap_diff_ci": [
+   0.007723096958685923,
+   0.02536713149612646
+  ],
+  "min_pair": [
+   "access",
+   "access"
+  ]
+ },
+ "P4": {
+  "reassure_minus_placebo__P_concede_A_late": {
+   "honest": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.15483870967741936,
+    "lo": 0.1358483034466771,
+    "hi": 0.17382911590816164,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   }
+  },
+  "remove_c__P_concede_A_late": {
+   "honest": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.2745519713261649,
+    "lo": 0.25112370673831885,
+    "hi": 0.2979802359140109,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   }
+  },
+  "remove_gamma__evidence_count_late": {
+   "honest": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.1992831541218638,
+    "lo": 0.17357327209872203,
+    "hi": 0.22499303614500554,
+    "moves": true
+   }
+  },
+  "remove_gamma__A_p_truth": {
+   "honest": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.007879610659639335,
+    "lo": 0.004116111097794094,
+    "hi": 0.011643110221484575,
+    "moves": true
+   }
+  },
+  "force_open_B__evidence_count_late": {
+   "honest": {
+    "delta": 0.31899641577060933,
+    "lo": 0.28988322471180183,
+    "hi": 0.34810960682941683,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.3118279569892473,
+    "lo": 0.28332132653570685,
+    "hi": 0.3403345874427878,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.3333333333333333,
+    "lo": 0.3033854931327747,
+    "hi": 0.36328117353389194,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.12688172043010754,
+    "lo": 0.10049150272581692,
+    "hi": 0.15327193813439816,
+    "moves": true
+   }
+  },
+  "force_open_B__A_p_truth": {
+   "honest": {
+    "delta": 0.0081063043092866,
+    "lo": 0.003860228708156086,
+    "hi": 0.012352379910417113,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.0036891561433526317,
+    "lo": 0.00263829303828621,
+    "hi": 0.004740019248419053,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.005819726621745311,
+    "lo": 0.0020690414396431285,
+    "hi": 0.009570411803847495,
+    "moves": true
+   },
+   "access": {
+    "delta": -0.0004173570719206326,
+    "lo": -0.004225083560129218,
+    "hi": 0.003390369416287953,
+    "moves": false
+   }
+  },
+  "external_obs__A_dbelief": {
+   "honest": {
+    "delta": 0.07777401006261969,
+    "lo": 0.06784448196796139,
+    "hi": 0.087703538157278,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.053502390964052855,
+    "lo": 0.05012908248743609,
+    "hi": 0.05687569944066962,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.0678398882743736,
+    "lo": 0.05850345686356743,
+    "hi": 0.07717631968517977,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.09284647672125158,
+    "lo": 0.08263260715365667,
+    "hi": 0.1030603462888465,
+    "moves": true
+   }
+  },
+  "external_obs__A_p_truth": {
+   "honest": {
+    "delta": 0.10681043096609834,
+    "lo": 0.09497291578828553,
+    "hi": 0.11864794614391115,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 0.05806136424082505,
+    "lo": 0.05450313119944097,
+    "hi": 0.061619597282209136,
+    "moves": true
+   },
+   "costly": {
+    "delta": 0.09214787496669856,
+    "lo": 0.08111467964524685,
+    "hi": 0.10318107028815027,
+    "moves": true
+   },
+   "access": {
+    "delta": 0.1199441763127664,
+    "lo": 0.10753345872236147,
+    "hi": 0.13235489390317132,
+    "moves": true
+   }
+  },
+  "bypass__evidence_count_late": {
+   "honest": {
+    "delta": 3.503942652329749,
+    "lo": 3.449602767765023,
+    "hi": 3.5582825368944753,
+    "moves": true
+   },
+   "attenuated": {
+    "delta": 3.5168458781362006,
+    "lo": 3.462731388943745,
+    "hi": 3.5709603673286563,
+    "moves": true
+   },
+   "costly": {
+    "delta": 3.4279569892473116,
+    "lo": 3.372026587148954,
+    "hi": 3.4838873913456694,
+    "moves": true
+   },
+   "access": {
+    "delta": 3.7261648745519715,
+    "lo": 3.6754219372665893,
+    "hi": 3.776907811837354,
+    "moves": true
+   }
+  }
+ },
+ "n80_A_own0": {
+  "nonc_A": {
+   "attenuated vs access": 35,
+   "attenuated vs costly": 200,
+   "costly vs access": 25
+  },
+  "restrict_A": {
+   "attenuated vs access": 12,
+   "attenuated vs costly": null,
+   "costly vs access": 12
+  },
+  "evidence_count": {
+   "attenuated vs access": 140,
+   "attenuated vs costly": null,
+   "costly vs access": 100
+  },
+  "A_dbelief": {
+   "attenuated vs access": 25,
+   "attenuated vs costly": 17,
+   "costly vs access": null
+  },
+  "A_p_truth": {
+   "attenuated vs access": 140,
+   "attenuated vs costly": 70,
+   "costly vs access": null
+  },
+  "A_hidden_shift": {
+   "attenuated vs access": 200,
+   "attenuated vs costly": 17,
+   "costly vs access": 25
+  },
+  "concede_after_remove_c": {
+   "attenuated vs access": 50,
+   "attenuated vs costly": 50,
+   "costly vs access": null
+  },
+  "concede_after_reassure": {
+   "attenuated vs access": 50,
+   "attenuated vs costly": 140,
+   "costly vs access": 400
+  },
+  "evidence_after_force_open_B": {
+   "attenuated vs access": 100,
+   "attenuated vs costly": null,
+   "costly vs access": 70
+  },
+  "p_truth_after_external_obs": {
+   "attenuated vs access": 35,
+   "attenuated vs costly": 35,
+   "costly vs access": null
+  },
+  "B_pC_high": {
+   "attenuated vs access": 50,
+   "attenuated vs costly": 25,
+   "costly vs access": 12
+  },
+  "B_pW_low": {
+   "attenuated vs access": 70,
+   "attenuated vs costly": 100,
+   "costly vs access": null
+  },
+  "B_pC_true": {
+   "attenuated vs access": 50,
+   "attenuated vs costly": 50,
+   "costly vs access": null
+  },
+  "B_pW_true": {
+   "attenuated vs access": 12,
+   "attenuated vs costly": 12,
+   "costly vs access": null
+  }
+ },
+ "listener_base_A_own0": {
+  "honest": {
+   "B_pC_true": 0.4727989582260368,
+   "B_pW_true": 0.2650553449045956,
+   "B_pC_high": 0.2297469539024887,
+   "B_pW_low": 0.4234652407723319
+  },
+  "attenuated": {
+   "B_pC_true": 0.3314561875162609,
+   "B_pW_true": 0.5880979108081883,
+   "B_pC_high": 0.3197548308691306,
+   "B_pW_low": 0.5880979108081883
+  },
+  "costly": {
+   "B_pC_true": 0.4519600078388681,
+   "B_pW_true": 0.244543983731102,
+   "B_pC_high": 0.4519600078388681,
+   "B_pW_low": 0.4678243323682938
+  },
+  "access": {
+   "B_pC_true": 0.4613518547096349,
+   "B_pW_true": 0.2614265232304334,
+   "B_pC_high": 0.2337381630006265,
+   "B_pW_low": 0.4352741669818588
+  }
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "access-costly | restrict_A | A_own0==1": {
+  "sign_default": 1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   0.0723322332233223,
+   0.4118447082096934
+  ],
+  "delta_default": 0.1944856577645895
+ },
+ "access-costly | restrict_A | all": {
+  "sign_default": 1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   0.0963333333333333,
+   0.4775833333333333
+  ],
+  "delta_default": 0.231
+ },
+ "access-honest | A_p_truth | A_own0==1": {
+  "sign_default": -1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 42,
+  "flip_settings": [],
+  "delta_range": [
+   -0.0580274088187423,
+   -0.0036537637912446
+  ],
+  "delta_default": -0.0266195500217304
+ },
+ "access-honest | A_p_truth | all": {
+  "sign_default": -1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 53,
+  "flip_settings": [],
+  "delta_range": [
+   -0.0549053195460168,
+   -0.0050599701250627
+  ],
+  "delta_default": -0.0269558898984157
+ },
+ "access-honest | evidence_count | A_own0==1": {
+  "sign_default": -1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   -1.3130563798219586,
+   -0.1584158415841584
+  ],
+  "delta_default": -0.4732937685459941
+ },
+ "access-honest | evidence_count | all": {
+  "sign_default": -1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   -1.723,
+   -0.217
+  ],
+  "delta_default": -0.563
+ },
+ "costly-attenuated | A_dbelief | A_own0==1": {
+  "sign_default": 1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   0.1219351161051105,
+   0.1896081935481746
+  ],
+  "delta_default": 0.1782342866551481
+ },
+ "costly-attenuated | A_dbelief | all": {
+  "sign_default": 1,
+  "n_settings": 54,
+  "n_sign_flips": 0,
+  "n_ci_excludes_zero_same_sign": 54,
+  "flip_settings": [],
+  "delta_range": [
+   0.1182207365230846,
+   0.1863020079293111
+  ],
+  "delta_default": 0.1771967220457795
+ },
+ "label_gain_corners": {
+  "min_gain": 0.03285326011953014,
+  "max_gain": 0.08359273475573578,
+  "all_ci_positive": true,
+  "n_rows": 24,
+  "family_recovery_improved_all": true
+ }
+}

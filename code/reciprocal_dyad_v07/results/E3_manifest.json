@@ -1,0 +1,121 @@
+{
+ "files": {
+  "E3_acts_identity.csv": "dabeab8e4d931df3",
+  "E3_contrasts.csv": "0198ae1799870939",
+  "E3_manifest.json": "d6be1932a1bcc02a",
+  "E3_power.csv": "0085de85a95d0748",
+  "E3_power_n80.csv": "b42c577cf754998b",
+  "E3_summary.csv": "036d1c367fffbd88",
+  "E3_worlds.csv.gz": "915703a3dfca9718"
+ },
+ "numpy": "2.4.6",
+ "extra": {
+  "seed": 20261003,
+  "n_worlds": 2000,
+  "beta": 1.5,
+  "pairs": [
+   [
+    "costly",
+    "honest"
+   ],
+   [
+    "attenuated",
+    "honest"
+   ],
+   [
+    "costly",
+    "costly"
+   ],
+   [
+    "attenuated",
+    "attenuated"
+   ]
+  ],
+  "interventions": {
+   "base": null,
+   "reassure": {
+    "force_reassure": {
+     "round": 7,
+     "agent": "B"
+    }
+   },
+   "placebo": {
+    "force_reassure": {
+     "round": 7,
+     "agent": "B"
+    },
+    "placebo": true
+   },
+   "remove_c_A": {
+    "remove_c_from": 7,
+    "remove_c_for": [
+     "A"
+    ]
+   },
+   "remove_c_AB": {
+    "remove_c_from": 7
+   },
+   "external": {
+    "external_obs_round": 7,
+    "external_rho": 0.95
+   },
+   "force_silence": {
+    "force_act": {
+     "round": 7,
+     "agent": "B",
+     "act": 3
+    }
+   }
+  },
+  "timing_s": {
+   "costlyxhonest|base": 2.37,
+   "costlyxhonest|reassure": 2.41,
+   "costlyxhonest|placebo": 1.21,
+   "costlyxhonest|remove_c_A": 1.22,
+   "costlyxhonest|remove_c_AB": 1.22,
+   "costlyxhonest|external": 1.21,
+   "costlyxhonest|force_silence": 1.18,
+   "attenuatedxhonest|base": 2.56,
+   "attenuatedxhonest|reassure": 2.51,
+   "attenuatedxhonest|placebo": 1.31,
+   "attenuatedxhonest|remove_c_A": 1.31,
+   "attenuatedxhonest|remove_c_AB": 1.3,
+   "attenuatedxhonest|external": 1.32,
+   "attenuatedxhonest|force_silence": 1.32,
+   "costlyxcostly|base": 2.46,
+   "costlyxcostly|reassure": 2.46,
+   "costlyxcostly|placebo": 1.22,
+   "costlyxcostly|remove_c_A": 1.24,
+   "costlyxcostly|remove_c_AB": 1.22,
+   "costlyxcostly|external": 1.21,
+   "costlyxcostly|force_silence": 1.21,
+   "attenuatedxattenuated|base": 2.71,
+   "attenuatedxattenuated|reassure": 2.7,
+   "attenuatedxattenuated|placebo": 1.36,
+   "attenuatedxattenuated|remove_c_A": 1.36,
+   "attenuatedxattenuated|remove_c_AB": 1.39,
+   "attenuatedxattenuated|external": 1.34,
+   "attenuatedxattenuated|force_silence": 1.36
+  },
+  "power": {
+   "grid": [
+    8,
+    12,
+    17,
+    25,
+    35,
+    50,
+    70,
+    100,
+    140,
+    200,
+    400
+   ],
+   "resamples": 400,
+   "alpha": 0.05,
+   "test": "Welch t two-sided",
+   "seed": 20261004
+  },
+  "total_s": 49.4
+ }
+}

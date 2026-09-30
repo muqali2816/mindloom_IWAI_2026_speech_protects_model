@@ -1,0 +1,52 @@
+{
+  "status": "Exploratory prototype after review; not preregistered; no human validation",
+  "n_dyads_per_condition": 2000,
+  "simulation_seed": 202609302,
+  "observer_seed": 202609303,
+  "params": {
+    "rounds": 12,
+    "rho": 0.75,
+    "lam_low": 0.35,
+    "lam_ask": 0.9,
+    "lam_floor": 0.05,
+    "tau": 0.2,
+    "k": 2.0,
+    "b": 1.1,
+    "restriction_cost": 0.12
+  },
+  "hypotheses": [
+    [
+      "reference",
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      "attenuation",
+      0.1,
+      0.0,
+      0.0
+    ],
+    [
+      "concession_cost",
+      1.0,
+      1.4,
+      0.0
+    ],
+    [
+      "access_protection",
+      1.0,
+      0.0,
+      2.0
+    ]
+  ],
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "channel": "Dirichlet pseudocount 0.5 per output followed by 25% state-independent mixture; specified sensitivity assumptions",
+  "inference": "Exact external filter on (fact,form pair) for four specified parameter points; parameters are not estimated",
+  "forecast": "Agents hold previous partner form and coarse act fixed for their one-step action evaluation",
+  "source_hashes": {
+    "baseline_compare.py": "2591c5d037ccf315958117cd9847321888ea23b13927acdd88d1675b89836db6"
+  }
+}

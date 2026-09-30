@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this repository."
+title: "Speech that Protects a Model — companion code (IWAI 2026)"
+authors:
+  - family-names: Svet
+    given-names: Maria
+    affiliation: Mindloom Cognitive Lab
+version: 1.0.0
+date-released: 2026-09-30
+repository-code: https://github.com/muqali2816/mindloom_IWAI_2026_speech_protects_model
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Speech that Protects a Model: Typed Speech Evidence and Belief-Protecting Mechanisms in Dialogue"
+  authors:
+    - family-names: Svet
+      given-names: Maria
+  collection-title: "Active Inference. IWAI 2026"
+  year: 2026
+  publisher: Springer

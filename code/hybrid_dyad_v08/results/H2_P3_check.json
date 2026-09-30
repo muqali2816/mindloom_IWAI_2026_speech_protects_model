@@ -1,0 +1,62 @@
+{
+ "labels_improve_next_signal_every_generator": {
+  "honest": true,
+  "attenuated": true,
+  "costly": true,
+  "access": true,
+  "mixed": true,
+  "access_x_access": true,
+  "costly_x_costly": true
+ },
+ "labels_improve_family_recovery_every_defined_generator": {
+  "attenuated": 0.06000000000000005,
+  "costly": 0.07450000000000001,
+  "access": 0.0754999999999999,
+  "access_x_access": 0.08150000000000002,
+  "costly_x_costly": 0.061999999999999944
+ },
+ "null_zero_gain": true,
+ "oracle_bounds_labels": {
+  "honest": true,
+  "attenuated": true,
+  "costly": true,
+  "access": true,
+  "mixed": true,
+  "access_x_access": true,
+  "costly_x_costly": true
+ },
+ "ratio_eta0.25": {
+  "honest": 0.5496322500684494,
+  "attenuated": 0.5387091069564808,
+  "costly": 0.5350385071062133,
+  "access": 0.5928856582066819,
+  "mixed": 0.5301057423396794,
+  "access_x_access": 0.6053630936924733,
+  "costly_x_costly": 0.5266976356129647
+ },
+ "ratio_in_0.25_0.5": {
+  "honest": false,
+  "attenuated": false,
+  "costly": false,
+  "access": false,
+  "mixed": false,
+  "access_x_access": false,
+  "costly_x_costly": false
+ },
+ "ratio_decreasing_with_eta": {
+  "honest": true,
+  "attenuated": true,
+  "costly": true,
+  "access": true,
+  "mixed": true,
+  "access_x_access": true,
+  "costly_x_costly": true
+ },
+ "family_gain_by_generator": {
+  "attenuated": 0.06000000000000005,
+  "costly": 0.07450000000000001,
+  "access": 0.0754999999999999
+ },
+ "access_gains_most": true,
+ "attenuation_gains_least": true
+}

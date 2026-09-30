@@ -1,0 +1,3 @@
+tier,n_cases,doc_types,sources,words_min,words_median,words_max,exact_duplicate_texts,near_dup_pairs_J5_ge_0_3,near_dup_pairs_J5_ge_0_2
+A,169,monologue_fragment,corpus_ood_regime_en_200.txt,35,50.0,71,0,0,0
+B,420,monologue_fragment,corpus_d_defense_en_run_4mon.txt;corpus_ood_defense_en_200_v_2.txt,1,15.0,47,0,15,26
