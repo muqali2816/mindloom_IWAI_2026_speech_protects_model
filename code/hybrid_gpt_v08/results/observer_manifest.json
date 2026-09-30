@@ -1,0 +1,14 @@
+{
+  "n_worlds": 96,
+  "n_per_A_type": 24,
+  "B_true": "reference",
+  "B_unknown_to_observer": true,
+  "parameter_pairs": 16,
+  "private_strata": 9,
+  "paths": 8,
+  "main_elapsed": 1256.1,
+  "parallel_sensitivity_elapsed": 243.5144226551056,
+  "forecast_excludes_first_events": 4,
+  "local_sensitivity_workers": 4,
+  "sensitivity_worlds": 16
+}

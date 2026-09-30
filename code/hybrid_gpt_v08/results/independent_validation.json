@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "scalar_joint_policy": true,
+    "Bayes_martingale": true,
+    "rho_parameterization": true,
+    "role_symmetry": true,
+    "no_private_record_double_count": true,
+    "normalization_and_MI": true,
+    "position_is_causal": true,
+    "local_placebo_pre_history": true,
+    "gate_off_form_null": true,
+    "Dirichlet_identity": true,
+    "short_particle_agreement": true,
+    "uninformative_label_null": true,
+    "oracle_arrival": true
+  },
+  "details": {
+    "scalar_policy_max_error": 2.6645352591003757e-15,
+    "scalar_MI_max_error": 2.4424906541753444e-15,
+    "Bayes_martingale_error": 2.0816681711721685e-17,
+    "mirror_max_error": 1.4432899320127035e-15,
+    "speech_logBF_max": 2.1972216225595425,
+    "speech_logBF_bound": 2.197224577336219,
+    "position_policy_effect": 0.6545793650646158,
+    "gate_off_conditional_form_difference": 2.220446049250313e-16,
+    "gate_off_form_posterior_difference": 2.0816681711721685e-17,
+    "Dirichlet_identity_error": 2.842170943040401e-14,
+    "short_exact_paths": 576,
+    "short_particle_posterior_max_error": 0.0022076545641985246,
+    "short_particle_forecast_max_error": 0.002808801143130965,
+    "oracle_rate_error": 0.0
+  },
+  "all_passed": true,
+  "elapsed": 9.20838713645935
+}

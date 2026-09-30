@@ -10,7 +10,7 @@ The paper has two parts and a bridge:
 |---|---|---|
 | I  | Typed annotation of protective speech (ten labels: eight configurations BUILD SEEK UNSEAL LOCK DRAIN FLOOD EDGE VOID, one function SEAL, one event SHIFT) and a 589-case held-out benchmark; archived July 2026 outputs of the typed engine and of a direct-prompt baseline on the 169 Tier A cases | `code/part1_benchmark/`, `data/archived_predictions/`, `results/part1_*.csv`, `results/benchmark_construction.csv` |
 | II | Single-agent active-inference model of a speaker who keeps a belief unrevised (attenuation ω vs concession cost c), 4000 simulated worlds | **not included** – see `code/part2_single_agent/README.md` (author archive, numbers quoted unchanged from the manuscript) |
-| Bridge | Dyadic models in which speech is (a) evidence for the partner and (b) a control on access to joint verification; an external observer with the Part I labels as a noisy channel | `code/mbridge/` (author's M-bridge), `code/reciprocal_dyad_v07/`, `code/hybrid_dyad_v08/` (model used in the paper) |
+| Bridge | Dyadic models in which speech is (a) evidence for the partner and (b) a control on access to joint verification; an external observer with the Part I labels as a noisy channel | `code/mbridge/` (author's M-bridge), `code/reciprocal_dyad_v07/`, `code/hybrid_dyad_v08/` (model used in the paper), `code/hybrid_gpt_v08/` (independent re-implementation with different design choices; `ext_observer.py` extends its observer pilot from 96 to 480 dialogues) |
 
 `paper/` holds the LaTeX sources of the 12-page LNCS camera-ready (`main.tex`, `references.bib`, `main.pdf`);
 `docs/` holds the internal review, the model comparison and the two simulation reports (Russian) plus the

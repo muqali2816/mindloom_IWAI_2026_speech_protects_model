@@ -1,0 +1,247 @@
+{
+  "name": "Mindloom hybrid v0.8",
+  "date": "2026-09-30",
+  "status": "Exploratory synthetic model; not human validation",
+  "files": [
+    {
+      "path": "DEVELOPMENT_NOTES.md",
+      "bytes": 2673,
+      "sha256": "363cfd32c42d01f9e886f27f53c8eb4682878b5509daba185f899fdf616eb51b"
+    },
+    {
+      "path": "MODEL_SPEC.md",
+      "bytes": 12183,
+      "sha256": "e04d83760d14ae86968c35949c4669c40fef11ad5cea4fe44487c7f226af0886"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4055,
+      "sha256": "b694c227c99399199e2f8d5e61231e21b6ba0e57a898e0b040b84a75a2afb0ee"
+    },
+    {
+      "path": "analyze_results.py",
+      "bytes": 4378,
+      "sha256": "45b5ad220f14df476e866ac2b9747e9547a79d7b40690929851deebbb5eb0962"
+    },
+    {
+      "path": "build_report.py",
+      "bytes": 46815,
+      "sha256": "0d8f83678e2cb590e3491efff40707599d4d8ff8a6cae02bef89b3065eadf82e"
+    },
+    {
+      "path": "channel.py",
+      "bytes": 1545,
+      "sha256": "4af675a43c90c12d71b75369b142c2413a7a7775097a4441fb8cd71338910cdc"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 291,
+      "sha256": "c375ce90a560da5383fa182afd5f77c367da75ba9bb30b4a2e82861f8dfe0632"
+    },
+    {
+      "path": "model.py",
+      "bytes": 11735,
+      "sha256": "0beadf7c4ce83f15cece5afc45f3774824815916ab5cbc0bc0570db8bbd062b2"
+    },
+    {
+      "path": "observer.py",
+      "bytes": 5043,
+      "sha256": "724de99ea79f3cd2d077cc7f0c24272d238fd599de855141538980ac9b30a392"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 2131,
+      "sha256": "783595e75552431a71eed32b0c4a11d195113f7b10d85be76bb6bb4c88d95364"
+    },
+    {
+      "path": "report/MANUSCRIPT_INTEGRATION.txt",
+      "bytes": 2502,
+      "sha256": "1c780f1d7a3d2f70ed153fe9263c38bcac6cb01eeb417c26b03296e34678d55c"
+    },
+    {
+      "path": "report/Mindloom_hybrid_v08_RU_EN_2026-09-30.pdf",
+      "bytes": 227131,
+      "sha256": "715408e6375300e7bef793d1c713c67e4be0a9b76328d48ecf1654cf6342ed7d"
+    },
+    {
+      "path": "report/Proposed_hybrid_sections_EN.txt",
+      "bytes": 8402,
+      "sha256": "19db8206c619b39e956a0d11ee07590f2c992654b9abddc755abde52cdb4ee5c"
+    },
+    {
+      "path": "report/belief_trajectories.png",
+      "bytes": 96203,
+      "sha256": "40c63bf099a39d5c94b3fdf107e623d94067e75422002aaeaaf67ba46d1b25f8"
+    },
+    {
+      "path": "report/mixed_pairs.png",
+      "bytes": 135128,
+      "sha256": "bdd1a14e2cba4ef6dc77a28a8e22e5c9826457f51e766ea6c5f90d765e6271e9"
+    },
+    {
+      "path": "results/additional_dynamics.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/additional_dynamics_contrasts.csv",
+      "bytes": 1238,
+      "sha256": "500d976747465ee54b516dff8d148458426bb2b35513204be7cc491a633c3d7f"
+    },
+    {
+      "path": "results/annotation_posterior.json",
+      "bytes": 1133,
+      "sha256": "068e1e069038699fb66f2508870347db54dacdb38263c23212445d2a2383708f"
+    },
+    {
+      "path": "results/calibration_prior_sensitivity.json",
+      "bytes": 3867,
+      "sha256": "9ae3c24e7d80e1572f80ea9a7b6f135909549022f2e595d07905d296a8d0cf8b"
+    },
+    {
+      "path": "results/dynamics.csv",
+      "bytes": 22193,
+      "sha256": "e77f4e05cc7e38f16df4a84cbc2e7c79b660d6227d3a6c9d0126ba2c2b22e884"
+    },
+    {
+      "path": "results/dynamics.log",
+      "bytes": 3942,
+      "sha256": "208da07d0c065780006391d81bcf03b4501d7096486aa1017bac07bd73c69d45"
+    },
+    {
+      "path": "results/dynamics_contrasts.csv",
+      "bytes": 42510,
+      "sha256": "84fe71bd833fb957e13ca6fcfa0ca3ed65c0e667413d5189b27cc7a409998540"
+    },
+    {
+      "path": "results/dynamics_manifest.json",
+      "bytes": 122,
+      "sha256": "d0d53d8d2bfde596089ce105a11c26b051b18aed007593d9716aa1d2808a4c4b"
+    },
+    {
+      "path": "results/independent_validation.json",
+      "bytes": 1238,
+      "sha256": "9b980581b7a3865e611f3bfb0a12b28cfc463ac2cacab2c4ac3fbc86d189ba92"
+    },
+    {
+      "path": "results/observer.log",
+      "bytes": 935,
+      "sha256": "e1938972fa4c6b7a60f77b74bf0bd9821c81acf2ef34aea13d8e6ae7f948bbc6"
+    },
+    {
+      "path": "results/observer_confusion.csv",
+      "bytes": 2218,
+      "sha256": "bb34731b799c09fba05a8e1668655df60a11e5e3dab66968cb48f9dd2c5dbc23"
+    },
+    {
+      "path": "results/observer_contrasts.csv",
+      "bytes": 6340,
+      "sha256": "0289e7c660e41065764752d43ead837c85bc54031625ee81417f70ae99a5473f"
+    },
+    {
+      "path": "results/observer_data.npz",
+      "bytes": 234205,
+      "sha256": "47d2e2b689aee5e6cedab44fa88965d538f4fb7e5a49738aa10a54dc923104ea"
+    },
+    {
+      "path": "results/observer_manifest.json",
+      "bytes": 342,
+      "sha256": "891d7e25ed047e6e72fc62b3e1d039a1af72a45c39405d00987ef7a267c3eae1"
+    },
+    {
+      "path": "results/observer_outputs.npz",
+      "bytes": 452794,
+      "sha256": "0cf731a406282c6ad745e06b6682341a016172803c974c7024779c2a90000049"
+    },
+    {
+      "path": "results/observer_overall.csv",
+      "bytes": 553,
+      "sha256": "5ff8e27b27353557e34764bd6a351a2516cae4f0208169119d32ace5ca240b50"
+    },
+    {
+      "path": "results/observer_summary.csv",
+      "bytes": 2042,
+      "sha256": "020812e5b948a3f7258befdb5f2dd5d8dc28eb2f16b5f559415ddc17df37850e"
+    },
+    {
+      "path": "results/observer_worlds.csv",
+      "bytes": 36876,
+      "sha256": "57ad1717125ca19fd30bcbcbbd445716e4ee0d34088cff06b84f72030dac16fa"
+    },
+    {
+      "path": "results/particle_sensitivity.csv",
+      "bytes": 5354,
+      "sha256": "515ac885ca40646953a54f48d82ff522524f4fb9dc541a039b97f70bd0de48a2"
+    },
+    {
+      "path": "results/particle_sensitivity_summary.csv",
+      "bytes": 721,
+      "sha256": "62cb10c34b6b3f538a562235f84538b418e234af1697170d1a7705d6e777ddec"
+    },
+    {
+      "path": "results/reporting.log",
+      "bytes": 1527,
+      "sha256": "9c7f18f0cd366822b8158d607dfadf8d7ce22763dc8013b98b21fa789e63ccda"
+    },
+    {
+      "path": "results/rho_sensitivity.csv",
+      "bytes": 704,
+      "sha256": "09ab19d9074f260c1b0d01ef7fd911829574393f20d61f0e10d73222e9ebff13"
+    },
+    {
+      "path": "results/selected_dynamics_worlds.npz",
+      "bytes": 335126,
+      "sha256": "548c23d499138a11510e238362e205bb9f3bcbef15a0f11cfd408c219f33b87b"
+    },
+    {
+      "path": "results/sensitivity.log",
+      "bytes": 1555,
+      "sha256": "745f012256399e81ed594f1d41f0bed5f0f5666099cad2ce3737947de5eabc8b"
+    },
+    {
+      "path": "results/trajectories.csv",
+      "bytes": 66781,
+      "sha256": "6673da3b622fddb207883ab4607b0605c319532403bc5945ef322ebac271e01b"
+    },
+    {
+      "path": "results/validation.log",
+      "bytes": 1239,
+      "sha256": "6c6d295cd5cb4b812edec220ece85196889cc928f4b50e3091070ab13d0fd0fa"
+    },
+    {
+      "path": "run_dynamics.py",
+      "bytes": 4322,
+      "sha256": "d5ea0171cb4486cc29338cab6dff6edb53af209da3e1bb4ca3ba249366e98274"
+    },
+    {
+      "path": "run_observer.py",
+      "bytes": 2318,
+      "sha256": "0d4c41b2e037520cfd5e0d44dfe0c099241f1a0797146efe1670733537688a3c"
+    },
+    {
+      "path": "run_sensitivity.py",
+      "bytes": 2551,
+      "sha256": "261ffdb2229ce1b5f6324af13120ba99edb1faec05adbbe306cbd74361c4759b"
+    },
+    {
+      "path": "source/baseline_confusion_counts_tierA.csv",
+      "bytes": 377,
+      "sha256": "d8f02d233e9490cecd1b34d1550c374df6183e3ec60e3efdbeda34989aa24ebe"
+    },
+    {
+      "path": "source/engine_confusion_counts_tierA.csv",
+      "bytes": 378,
+      "sha256": "df5d2f7ef503525635425421ea30f64851a97fcfe3dd88d61544494c51b500a8"
+    },
+    {
+      "path": "source/provenance.json",
+      "bytes": 841,
+      "sha256": "e7347f77cf18110e9a7e89edd8b2a0fcd852c7ddeffdd94620db47eed114286b"
+    },
+    {
+      "path": "validate_independent.py",
+      "bytes": 9466,
+      "sha256": "9f5be238f468fb6b9504c37bbf71c2a5be2ab7e605ea9d9133006a56b76ed22b"
+    }
+  ]
+}

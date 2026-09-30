@@ -1,0 +1,9 @@
+            mode  world  paths  correct_A  posterior_true_A  correct_B  posterior_true_B  arrival_logloss  act_logloss  min_path_ESS
+actions_evidence   47.5    8.0   0.479167          0.461496   0.239583          0.321739         0.499121     0.429545      2.646690
+  forms_evidence   47.5    1.0   0.489583          0.484400   0.281250          0.368261         0.363887     0.430233      1.000000
+ labels_evidence   47.5    8.0   0.468750          0.481126   0.302083          0.361138         0.401324     0.430742      3.316249
+            mode  paths  n  mean_arrival_logloss  mean_delta_from_K8  mean_abs_delta_from_K8  max_posterior_component_difference  median_max_posterior_component_difference  correct_A  main_correct_A
+actions_evidence      4 16              0.495184            0.003082                0.046841                            0.186867                                   0.036564     0.5625          0.4375
+actions_evidence     32 16              0.485526           -0.006576                0.030216                            0.124035                                   0.023547     0.4375          0.4375
+ labels_evidence      4 16              0.403088           -0.011963                0.022392                            0.075652                                   0.024383     0.4375          0.3750
+ labels_evidence     32 16              0.402325           -0.012726                0.018862                            0.060327                                   0.028984     0.3750          0.3750

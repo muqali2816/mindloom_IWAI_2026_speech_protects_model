@@ -1,0 +1,47 @@
+Integration checklist for the next manuscript revision
+
+1. Introduction
+Start from Friston & Frith (2015) and Friston, Parr et al. (2020), then pose the
+specific identification question. Do not say all prior active-inference accounts
+assume cooperation or guarantee learning. Do not equate agreement with learning.
+
+2. Part I
+Keep the empirical engine evaluation and its own benchmark definition. Keep
+primary versus alternate labels and the SHIFT event distinction. The hybrid
+has not rerun an LLM recognizer or produced new speech-annotation accuracy.
+Do not recast all 169 historical examples as Tier-1 feature evidence. Explain
+how the new two-form measurement would be annotated prospectively.
+
+3. Formal bridge
+Use the explicit form-conditioned label channel and its uncertainty. Explain
+that archived LOCK/SEEK rows are provisional anchors, not validated measurement
+of invitation/restriction. The full ontology is not itself simulated.
+
+4. Part II
+Add observed/inferred/assumed table and exact timing. If replacing the earlier
+single-agent or M-bridge model with v0.8, replace its entire methods and result
+block consistently. Do not mix a v0.8 row into the old recovery table.
+The code changes action names, timing, private data and observer priors.
+
+5. Results
+Separate belief accuracy, belief change, public switching and verification
+arrival. State the public-persistence/private-updating counterexample explicitly.
+Report beta=0: the access-protection effect does not require information value.
+Report arrival prediction, next-act prediction and mechanism recovery separately.
+Report the approximation boundary of the long hidden-form observer.
+
+6. Discussion and abstract
+Claim a computable in-silico observation bridge and testable interaction process.
+Do not claim uniquely active-inference behavior, inferred human motives, detected
+allostatic burden, clinical validation or full generative-model learning.
+
+7. Reviewer issues not resolved by this model
+Benchmark construction, independence of annotation, held-out definitions,
+baseline engine comparisons, high-tier annotation reliability, underlying LLM
+reproducibility and physiological validation still need their own evidence.
+A formal model cannot substitute for these empirical checks.
+
+8. Poster
+Use one observation loop, three mechanism descriptions, one mixed-pair result,
+and one prediction-vs-identification comparison. Keep the untested physiology
+in a roadmap box. All v0.8 values must be labelled synthetic/exploratory.

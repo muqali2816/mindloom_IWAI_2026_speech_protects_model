@@ -1,0 +1,23 @@
+{
+  "archive": "reciprocal_dyad_v07_full.zip",
+  "archive_sha256": "5a24a9ffc019b0fe241247a4b1d53ecf962ec57c376762fb7adab253a84b1e7c",
+  "tables": [
+    {
+      "file": "source/baseline_confusion_counts_tierA.csv",
+      "archive_member": "reciprocal_dyad/data/baseline_confusion_counts_tierA.csv",
+      "sha256": "d8f02d233e9490cecd1b34d1550c374df6183e3ec60e3efdbeda34989aa24ebe",
+      "matches_archive": true
+    },
+    {
+      "file": "source/engine_confusion_counts_tierA.csv",
+      "archive_member": "reciprocal_dyad/data/engine_confusion_counts_tierA.csv",
+      "sha256": "df5d2f7ef503525635425421ea30f64851a97fcfe3dd88d61544494c51b500a8",
+      "matches_archive": true
+    }
+  ],
+  "used_rows": [
+    "LOCK",
+    "SEEK"
+  ],
+  "warning": "Historical primary-label rows; not a fresh feature-level calibration on human dialogues."
+}
