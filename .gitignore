@@ -12,3 +12,9 @@ paper/*.fls
 paper/*.fdb_latexmk
 paper/*.synctex.gz
 .DS_Store
+poster/*.aux
+poster/*.log
+poster/*.nav
+poster/*.out
+poster/*.snm
+poster/*.toc
