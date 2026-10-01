@@ -61,10 +61,17 @@ for g, (l, o, r) in SG.items():
     chk(f'T7 sig gain labels {g}', l, pg.loc[(g, 'labels_eta0.25'), 'sig_gain'], 3); chk(f'T7 sig gain oracle {g}', o, pg.loc[(g, 'oracle'), 'sig_gain'], 3)
     chk(f'T7 ratio {g}', r, pg.loc[(g, 'labels_eta0.25'), 'sig_ratio'], 2)
 # power (dialogues per group for 80 % power, A on own side)
-for (m, pair, v) in [('A_dbelief', 'attenuated vs costly', 17), ('B_pW_true', 'attenuated vs costly', 12), ('A_hidden_shift', 'attenuated vs costly', 17), ('nonc_A', 'attenuated vs costly', 200),
-                     ('restrict_A', 'attenuated vs access', 12), ('B_pW_true', 'attenuated vs access', 12), ('restrict_A', 'costly vs access', 12), ('B_pC_high', 'costly vs access', 12)]:
+for (m, pair, v) in [('A_dbelief', 'attenuated vs costly', 17), ('B_pW_low', 'attenuated vs costly', 100), ('A_hidden_shift', 'attenuated vs costly', 17), ('nonc_A', 'attenuated vs costly', 200),
+                     ('restrict_A', 'attenuated vs access', 12), ('B_pW_low', 'attenuated vs access', 70), ('restrict_A', 'costly vs access', 12), ('B_pC_high', 'costly vs access', 12)]:
     chk(f'n80 {m} {pair}', str(v), N80[m][pair], 0)
 assert N80['A_dbelief']['costly vs access'] is None, 'dbelief separates cost vs access?'
+# v3.5 additions: all-world non-concession contrast, own-side label gains (Table 6 is all worlds), number of one-factor label-gain checks
+n80 = pd.read_csv(R / 'H3_power_n80.csv').set_index(['split', 'pair', 'channel'])
+chk('n80 nonc_A attenuated vs costly, all worlds', '25', n80.loc[('all', 'attenuated vs costly', 'nonc_A'), 'n_80'], 0)
+rec_own = pd.read_csv(R / 'H2_recovery.csv'); rec_own = rec_own[rec_own.split == 'A_own0==1'].set_index(['generator', 'channel'])
+for g, v in {'attenuated': '2', 'costly': '11', 'access': '5'}.items():
+    chk(f'own-side label gain (points) {g}', v, 100 * (rec_own.loc[(g, 'labels_eta0.25'), 'correct_family'] - rec_own.loc[(g, 'acts'), 'correct_family']), 0)
+chk('one-factor label-gain checks', '24', len(pd.read_csv(R / 'H4_label_gain_corners.csv')), 0)
 # Part I
 chk('engine correct', '129', sc.loc['engine', 'strict_correct'], 0); chk('engine macroF1', '0.757', sc.loc['engine', 'macro_f1'], 3)
 chk('prompt correct', '145', sc.loc['direct_prompt', 'strict_correct'], 0); chk('prompt macroF1', '0.837', sc.loc['direct_prompt', 'macro_f1'], 3)

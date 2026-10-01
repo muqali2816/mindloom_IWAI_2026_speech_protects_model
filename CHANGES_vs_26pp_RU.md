@@ -84,3 +84,14 @@
 - Q6: репозиторий публичный; тег/DOI не добавлены (локальные коммиты ещё не отправлены — нужен PAT с правом Contents: write). Статусы «quoted, not re‑run» / «transcribed» сохранены.
 
 **Объём:** после правок текст выходил на 13‑ю страницу (аннотация длиннее); сжаты формулировки в §1, §2.2, §3, §4, §5 и в абзаце Data/code (без потери содержания: см. diff `paper/main.tex`), рис. 1/2 уменьшены до 0.68/0.70\textwidth. Итог: основной текст = 12 стр., References с 13‑й, приложение стр. 14–19, всего 19 стр.; 0 ошибок компиляции; overfull‑боксов нет (кроме 0.9 pt в таблице).
+
+## 8. Второе внешнее ревью (01.10.2026, v3.5) — всё проверено по CSV, принято
+- **Мощность, P(ω_A=0.2):** в тексте «listener's posterior on ω 12» относилось к `B_pW_true` (апостериор на *истинное* ω_A — величина, недоступная в реальном исследовании), а в табл. 5 стоит `B_pW_low` = P(ω_A=0.2). Исправлено на имя из таблицы с её числом: 100 (atten vs cost); в постере §4 строка → 100 / 70 / >400 (`H3_power_n80.csv`). «listener's posterior on c 12» → «P(c_A=1.6) 12» (число то же). Добавлено «late non-concession 200 (25 in all worlds)».
+- **Постер §4, фраза под таблицей:** утверждение «no single measurement reaches target power for all three pairs» было неверно (non-concession 200/35/25 и P(c_A=1.6) 25/50/12 достигают) → «most efficient for different pairs; none is the most efficient for all three».
+- **«24 corners» → «24 one-factor checks»:** `H4_label_gain_corners.csv` = 6 однофакторных настроек × 4 генератора, по 500 миров — не углы решётки. Исправлено в §4.2 и Приложении C с описанием дизайна.
+- **Табл. 6 — только все миры:** добавлено «(all 2 000 worlds; 2, 11 and 5 points for the first three rows in the own-side subset, n = 1 360)» (`H2_recovery.csv`, split `A_own0==1`; у H2 свой набор миров, поэтому 1 360, а не 1 381).
+- **Канал меток:** «Dirichlet-smoothed» в аннотации и Discussion; в Приложении C фраза о том, что сырые строки LOCK/SEEK не делят ни одной метки и вся неоднозначность идёт от псевдосчётов 0.5 по 11 категориям — доля уточнена по расчёту: 5.5/20.5 = 27 % (LOCK) и 5.5/25.5 = 22 % (SEEK), в тексте «22–27 %» (в ревью было «about 20 %»).
+- Убрана фраза «Labels are informative only because…» из §4.2 (дублирует Discussion (4)); подпись табл. 4 без «answers to…»; заголовок «Independently written variant»; подпись рис. 2 «mechanisms compared across measurements».
+- **Рис. 2** перерисован в печатном размере (122 × 54 мм, вектор PDF, кегль 6–7 pt, тот же `H1_mechanisms_summary.csv`): `scripts/make_fig2_channels.py` → `figures/H1_channels_print.pdf`; вставлен на полную ширину. Высота уменьшена с 2.30 до 2.12 in, чтобы основной текст остался в 12 стр.
+- `scripts/check_manuscript_numbers.py`: 117/117 (добавлены 5 проверок: nonc all‑worlds 25, own‑side gains 2/11/5, число однофакторных проверок 24).
+- Рис. 1 (схема модели) пока не перерисован — скрипта в репозитории нет.

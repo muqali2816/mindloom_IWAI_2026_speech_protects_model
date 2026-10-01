@@ -89,13 +89,18 @@ T7 sig gain labels costly_x_costly,0.085,0.084852,3,True,True
 T7 sig gain oracle costly_x_costly,0.161,0.161102,3,True,True
 T7 ratio costly_x_costly,0.53,0.526698,2,True,True
 n80 A_dbelief attenuated vs costly,17,17.0,0,True,True
-n80 B_pW_true attenuated vs costly,12,12.0,0,True,True
+n80 B_pW_low attenuated vs costly,100,100.0,0,True,True
 n80 A_hidden_shift attenuated vs costly,17,17.0,0,True,True
 n80 nonc_A attenuated vs costly,200,200.0,0,True,True
 n80 restrict_A attenuated vs access,12,12.0,0,True,True
-n80 B_pW_true attenuated vs access,12,12.0,0,True,True
+n80 B_pW_low attenuated vs access,70,70.0,0,True,True
 n80 restrict_A costly vs access,12,12.0,0,True,True
 n80 B_pC_high costly vs access,12,12.0,0,True,True
+"n80 nonc_A attenuated vs costly, all worlds",25,25.0,0,True,True
+own-side label gain (points) attenuated,2,1.985294,0,True,True
+own-side label gain (points) costly,11,10.735294,0,True,True
+own-side label gain (points) access,5,5.0,0,True,True
+one-factor label-gain checks,24,24.0,0,True,True
 engine correct,129,129.0,0,True,True
 engine macroF1,0.757,0.757161,3,True,True
 prompt correct,145,145.0,0,True,True
