@@ -1,6 +1,6 @@
 % IWAI 2026 poster — Speech that Protects a Model (A0 portrait, beamerposter)
 \documentclass[final,t]{beamer}
-\usepackage[orientation=portrait,size=a0,scale=1.22]{beamerposter}
+\usepackage[orientation=portrait,size=a0,scale=1.0]{beamerposter}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -55,11 +55,12 @@
 \vspace{-0.3cm}
 \begin{columns}[t,totalwidth=\paperwidth]
 \begin{column}{0.965\paperwidth}
-\begin{beamercolorbox}[wd=\textwidth,sep=1.2cm,rounded=true]{block body}
+\begin{beamercolorbox}[wd=\textwidth,sep=0.8cm,rounded=true]{block body}
   \begin{columns}[c,totalwidth=\textwidth]
   \begin{column}{0.80\textwidth}
   {\Huge\bfseries\color{tealdark} Speech that Protects a Model}\\[0.35cm]
-  {\LARGE\color{tealdark} Three ways a dialogue can leave a belief unrevised --- and what tells them apart}\\[0.45cm]
+  {\Large\color{tealdark} Belief updating, public concession, and access to evidence --- three mechanisms to distinguish}\\[0.3cm]
+  {\large\itshape\color{meta} Reality tells the system: ``Your model is wrong.'' \quad The system answers: ``So much the worse for reality.''}\\[0.35cm]
   {\Large Maria Svet \quad\small ORCID 0009-0007-5934-6531}\quad {\large Mindloom Cognitive Lab, \texttt{info@mindloom.ch}}\\[0.2cm]
   {\large\color{meta} IWAI 2026, 7th International Workshop on Active Inference, Madrid --- poster + spotlight}
   \end{column}
@@ -83,6 +84,7 @@ Active-inference accounts explain how dialogue \emph{aligns} generative models (
 \end{block}
 
 \begin{block}{2 \; One situation, two trajectories}
+\src{Constructed example; not an observed dialogue.}\\[0.2cm]
 \textbf{Shared opening.} Alex: ``I sent the revised budget with the latest prices.''\; Sam: ``The attachment is version 3, with the April prices; version 4 has the May prices.''
 
 \medskip
@@ -101,36 +103,38 @@ Sam: ``There is no point showing you the file.''
 \end{column}
 \end{columns}
 \medskip
-Two coordinates differ at once: \emph{what is said} (a concession is or is not made) and the \emph{form} of the moves (A invites joint verification, B restricts it). B does \textbf{not} reveal whether Alex privately changed their mind. Three possibilities:
+Two coordinates differ at once: \emph{what is said} (a concession is or is not made) and the \emph{form} of the moves (A invites joint verification, B restricts it). B does \textbf{not} reveal whether Alex privately changed their mind. Three candidate mechanisms to distinguish:
 
 \medskip
-{\small\begin{tabular}{@{}lll@{}}
-\textbf{reduced uptake} & $\omega<1$ & evidence barely moves private belief\\
-\textbf{costly expression} & $c>0$ & belief moves; conceding in public is costly\\
-\textbf{restricted access} & $\gamma>0$ & belief moves normally; little gets checked\\
-\end{tabular}}
+\small\begin{itemize}\setlength{\itemsep}{0pt}
+\item \textbf{reduced uptake} ($\omega<1$): received evidence has a weaker effect on private belief
+\item \textbf{costly expression} ($c>0$): private belief can change while public concession remains costly
+\item \textbf{restricted access} ($\gamma>0$): updating from received evidence is intact, but fewer checks occur
+\end{itemize}
+These mechanisms cannot be identified from this exchange alone.\normalsize
 \end{block}
 
 \begin{block}{3 \; Part I --- what speech makes observable}
-\textbf{Mindloom} annotates a contribution through five layers (L1 evidence atoms $\to$ L2 features $\to$ L3 evidence requirements $\to$ L4 configuration $\to$ L5 typed output or abstention). Ten \emph{descriptive} targets --- none presumes an intent:
+\textbf{Mindloom} annotates a speaker's contribution in its supplied context, with an explicit evidence trail or abstention when evidence is insufficient (L1 evidence atoms $\to$ L2 features $\to$ L3 evidence requirements $\to$ L4 configuration $\to$ L5 typed output). Eight descriptive configurations, one closure function (SEAL) and one transition event (SHIFT); these labels do not establish intent or a hidden psychological mechanism:
 
 \smallskip
 {\small
 \begin{tabular}{@{}ll@{}}
 BUILD & joint elaboration or repair, response still available\\
-SEEK & inquiry that makes an answer relevant \hfill $\leftarrow$ \emph{invite}\\
+SEEK & inquiry that makes an answer relevant\\
 UNSEAL & first-person disclosure, no regulation demanded\\
-LOCK & language constraining the addressee's replies \hfill $\leftarrow$ \emph{restrict}\\
+LOCK & language constraining the addressee's replies\\
 DRAIN & other positioned as required source of support\\
 FLOOD & intensification or repetition dominating the exchange\\
 EDGE & alternation between approach and withdrawal\\
 VOID & withdrawal from an offered opportunity to respond\\
 SEAL (function) & closure of a topic or channel\\
 SHIFT (event) & change with before-and-after configuration evidence\\
-\end{tabular}}
+\end{tabular}}\\[0.15cm]
+\small Closure (SEAL) alone does not establish defensiveness. In the simulation below, SEEK and LOCK serve as proxies for invitation and restriction of verification; this mapping remains to be tested in real dialogues.\normalsize
 
 \medskip
-\textbf{Benchmark:} 589 English monologue fragments generated for the ontology and fixed before any run; Tier A 169 cases (35--71 words, no near-duplicates); Tier B 420 (15 near-duplicate pairs). Provenance and annotator separation incompletely documented $\to$ \emph{internal curated evaluation}.
+\textbf{Benchmark:} 589 English monologue fragments generated for the ontology and fixed before any run; Tier A 169 cases (35--71 words, no near-duplicates); Tier B 420 (15 near-duplicate pairs). Provenance and annotator separation incompletely documented. Internal evaluation on ontology-generated fragments; performance on naturally occurring dialogues remains untested.
 
 \medskip
 \textbf{Re-scored July 2026 archive} (169 cases, majority of three stored runs, no new model calls):
@@ -138,7 +142,7 @@ SHIFT (event) & change with before-and-after configuration evidence\\
 \smallskip
 {\small\begin{tabular}{@{}lrrr@{}}
 \toprule
-system & correct & F1 & SHIFT\\
+system & correct & Macro-F1 & SHIFT\\
 \midrule
 direct prompt (Claude Haiku 4.5) & 145/169 & 0.837 & 18/20\\
 typed engine & 129/169 & 0.757 & 2/20\\
@@ -148,10 +152,28 @@ majority class (BUILD) & 20/169 & 0.021 & 0/20\\
 \end{tabular}}
 
 \medskip
-The engine has \textbf{no accuracy advantage}; its proposed value is the inspectable evidence trail. Six-rater pilot: $\kappa=1.00$ for lexically direct features, $0.23$ / $0.13$ / $-0.11$ for relational ones. A gate ablation at fixed model and prompt was \emph{not} run.
+In this archived comparison, the direct prompt outperforms the typed engine overall; the engine's proposed value is its inspectable evidence trail. Six raters assessed features, not the ten labels; reported Fleiss' $\kappa$: 1.00 for lexically direct features, $0.23$, $0.13$ and $-0.11$ for selected non-lexical features; rater matrices are unavailable. A gate ablation at fixed model and prompt was \emph{not} run.
 
 \medskip
-\textbf{Reused below:} the engine's confusion rows for gold LOCK (10 LOCK, 3 SEAL, 2 BUILD) and gold SEEK (20/20) become the noise model of the \emph{restrict / invite} channel.
+\textbf{Reused below:} the engine's confusion rows for gold LOCK (10 LOCK, 3 SEAL, 2 BUILD; 15 cases) and gold SEEK (20/20) define an assumed noise channel for \emph{restrict / invite}; the transfer of these small-sample rows to real dialogue forms is unvalidated.
+\end{block}
+
+\begin{block}{4 \; Simulation-based group comparisons: dialogues per group for $\approx$80\,\% power}
+{\small Welch test, $\alpha=0.05$. Smallest tested group sizes reaching approximately 80\,\% power under the simulated effects; not sample-size recommendations for human studies. $>400$: target power not reached at the largest tested group size.\\[0.15cm]\begin{tabular}{@{}lrrr@{}}
+\toprule
+ & atten.\ vs cost & atten.\ vs access & cost vs access\\
+\midrule
+non-concession rate, rounds 9--12 & 200 & 35 & 25\\
+absolute private-belief change & \textbf{17} & 25 & $>400$\\
+restriction rate & $>400$ & \textbf{12} & \textbf{12}\\
+listener's model-based $P(\omega_A{=}0.2)$ & \textbf{12} & 12 & $>400$\\
+listener's model-based $P(c_A{=}1.6)$ & 25 & 50 & \textbf{12}\\
+\bottomrule
+\end{tabular}
+\smallskip
+
+Different measurements distinguish different mechanism pairs efficiently; no single listed measurement reaches the target power for all three pairs within the tested range.
+}
 \end{block}
 
 \end{column}
@@ -159,7 +181,7 @@ The engine has \textbf{no accuracy advantage}; its proposed value is the inspect
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% column 2
 \begin{column}{0.315\textwidth}
 
-\begin{block}{4 \; Part II --- public non-concession under-determines the mechanism}
+\begin{block}{5 \; Part II --- public non-concession alone does not identify the mechanism}
 One speaker, binary fact $x$, prior $q_0=0.75$ on its own position; evidence $e$ of reliability $\rho=0.75$ arrives with rate $\lambda_0=0.35$ ($0.90$ after ASK). Subjective likelihood tempered: $A_{\omega}(e\mid x)\propto A(e\mid x)^{\omega}$, so
 \[
 \operatorname{logit} q_t=\operatorname{logit} q_0+\omega\, m_t \ln\tfrac{\rho}{1-\rho},\quad G(u)=\ell(u;q_t,c)-\Iw(q_t,u),
@@ -175,93 +197,44 @@ $\ell(\text{CONCEDE})=k q_t+c$, $\ell=b$ for PRESSURE, SILENCE, ASK; $k=2$, $b=1
 \smallskip
 {\small\begin{tabular}{@{}lrrr@{}}
 \toprule
- & reference & attenuation & concession cost\\
+ & reference & attenuation & cost\\
 \midrule
-late non-concession & 0.654 & \textbf{0.989} & \textbf{0.990}\\
-final $\Etrue$ & 0.797 & \textbf{0.538} & \textbf{0.809}\\
+non-concession, rounds 9--12 & 0.654 & \textbf{0.989} & \textbf{0.990}\\
+final prob.\ of true state & 0.797 & \textbf{0.538} & \textbf{0.809}\\
 absolute belief change & 0.349 & 0.051 & 0.356\\
 late ASK rate & 0.041 & 0.050 & 0.150\\
 \bottomrule
 \end{tabular}}
 
 \medskip
-Same public summary, opposite private states. Removing $c$ from round 7 raises any late concession $0.061\to0.433$ under cost and leaves attenuation at $0.054$. The epistemic term contributes 17\,\% of the asking contrast --- the dissociation follows mostly from costs and softmax choice. \src{All Part II numbers quoted from the author's archive.}
+Nearly identical late non-concession rates, but different private belief updating. Removing $c$ from round 7 raises the fraction of cost-agent dialogues with at least one concession in rounds 7--12 from 0.061 to 0.433; the attenuation condition remains at 0.054. Removing information gain while retaining all five actions reduces the between-mechanism ASK-rate gap from 0.099 to 0.083; the estimated contribution is 0.017, about 17\,\% of the full gap. \src{Part II results are taken from the previously checked simulation archive; they are not human measurements.}
 \end{block}
 
-\begin{block}{5 \; Bridge --- a dyad in which speech is evidence \emph{and} controls access}
-\begin{center}\includegraphics[width=0.9\textwidth]{../figures/H0_model_schematic.png}\end{center}
-Both agents infer; each move is an \textbf{act} $u\in\{$ASSERT, CONCEDE, PRESSURE, SILENCE, ASK, REASSURE$\}$ $\times$ a \textbf{form} $f\in\{$invite, restrict$\}$. A fresh shared signal arrives with
+\begin{block}{6 \; Bridge --- a dyad in which speech is evidence \emph{and} controls access}
+\begin{center}\includegraphics[width=0.78\textwidth]{../figures/H0_model_schematic.png}\end{center}
+Both agents infer; each move is an \textbf{act} $u\in\{$ASSERT, CONCEDE, PRESSURE, SILENCE, ASK, REASSURE$\}$ $\times$ a \textbf{form} $f$ ($f=1$: invite; $f=0$: restrict). Assumed verification rule: both agents must invite verification for the shared-evidence channel to remain open above its floor:
 \[
 \lambda_t=0.05+(\lambda_{\mathrm{base}}-0.05)\,f_{A}f_{B},\quad \lambda_{\mathrm{base}}=0.35\ (0.90\text{ after ASK}),
 \]
-so one restricting form collapses the channel to its floor. Policy over act$\times$form:
+so one restricting form reduces the arrival rate to the floor 0.05, not to zero. Policy over act$\times$form:
 \begin{align*}
 G(u,f)&=\ell(u)+\delta(1-f)+\gamma\,\lambda(u,f)\,d_t\\
 &\quad-\beta\big[\lambda(u,f)\,\Iw+\mathrm{IG}_{\text{partner}}(u)\big],\\
 P(u,f)&\propto e^{-G(u,f)/\tau},
 \end{align*}
 $\delta=0.12$, $\beta=1.5$, $\tau=0.2$;
-$d_t$ = probability that the next signal contradicts one's position. The partner's act is evidence through a level-0 model of the partner; every update is exact Bayes, then the $x$-marginal moves a fraction $\omega$ of the way (marginal shrink; the signal term $\Iw$ is a stated heuristic, off by $\le0.014$ nat at $\omega=0.2$).
+$\gamma$ weights the expected cost of a shared signal contradicting the speaker's initial position ($d_t$); $c$ prices each public concession. The partner's act is evidence through a level-0 model of the partner. Each update starts with an exact Bayesian posterior; $\omega$ then scales the change in its $x$-marginal --- this differs from the likelihood tempering of Part II. The signal term $\Iw$ is a stated heuristic (error $\le0.014$ nat at $\omega=0.2$).
 
 \medskip
-\textbf{External observer} (the ``annotator''): sees acts and the signal record, computes the exact posterior over the speaker's mechanism family; forms only through labels drawn from the LOCK / SEEK rows. Null channel: labels drawn from the \emph{act} instead of the form. Oracle: true forms. Ten validation checks pass; reproduces the M-bridge prototype act-for-act and the reciprocal dyad to $3\cdot10^{-12}$.
+\textbf{Model-based external observer:} sees acts and shared signals; receives forms only through noisy labels drawn from the LOCK / SEEK rows; computes the exact posterior over the speaker's mechanism family. Null channel: labels drawn from the \emph{act} instead of the form. Oracle: the simulation's true forms. Ten implementation checks pass (incl.\ act-for-act reproduction of the M-bridge prototype and the reciprocal dyad to $3\cdot10^{-12}$); these establish numerical consistency, not validation in human dialogues.
 \end{block}
 
-\begin{block}{6 \; Design: simulated dialogues per group for 80\,\% power (Welch, $\alpha=0.05$)}
-{\small\begin{tabular}{@{}lrrr@{}}
-\toprule
- & atten.\ vs cost & atten.\ vs access & cost vs access\\
-\midrule
-late non-concession & 200 & 35 & 25\\
-private belief change & \textbf{17} & 25 & $>400$\\
-restriction rate & $>400$ & \textbf{12} & \textbf{12}\\
-listener $P(\omega_A{=}0.2)$ & \textbf{12} & 12 & $>400$\\
-listener $P(c_A{=}1.6)$ & 25 & 50 & \textbf{12}\\
-\bottomrule
-\end{tabular}
-\smallskip
 
-Each mechanism has one cheap channel; none separates all three pairs.
-}
-\end{block}
-
-\end{column}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% column 3
-\begin{column}{0.315\textwidth}
-
-\begin{block}{7 \; Three mechanisms, three channels (speaker A, honest partner, $n=1\,381$)}
-\begin{center}\includegraphics[width=\textwidth]{../figures/H1_channels.png}\end{center}
+\begin{block}{7 \; What noisy form labels add to model-based inference}
+\small Share of simulated dialogues in which the observer's most probable mechanism family is the generating family (argmax of the posterior after round 12; 2\,000 dialogues per generator):\normalsize\\[0.1cm]
 {\small\begin{tabular}{@{}lrrrr@{}}
 \toprule
-channel & honest & $\omega{=}0.2$ & $c{=}1.6$ & $\gamma{=}2$\\
-\midrule
-late non-concession & 0.79 & \textbf{0.98} & \textbf{1.00} & 0.81\\
-$|\Delta$ private belief$|$ & 0.23 & \textbf{0.07} & 0.24 & 0.21\\
-hidden shift (belief moved, position kept) & 0.08 & 0.06 & \textbf{0.22} & 0.08\\
-shared signals per dialogue & 2.64 & 2.58 & 2.73 & \textbf{2.09}\\
-restriction rate & 0.34 & 0.35 & 0.34 & \textbf{0.53}\\
-\bottomrule
-\end{tabular}}
-\smallskip
-
-Attenuated and costly speakers are publicly identical and privately opposite: one does not learn, the other learns and hides it. The access protector does not look stubborn and learns normally from what arrives --- it arranges for less to arrive. This is trajectory~B formalised.
-\end{block}
-
-\begin{block}{8 \; Each mechanism answers to its own lever}
-\small\begin{itemize}\setlength{\itemsep}{1pt}
-\item \textbf{Partner's REASSURE} (net of placebo) and \textbf{removing $c$} move only the costly speaker's late concession: $+0.155$ and $+0.275$.
-\item \textbf{Removing $\gamma$} moves only the access protector: $+0.199$ shared signals, $-0.187$ late restriction.
-\item \textbf{One strong shared observation} moves the attenuated speaker least: $+0.058$ vs $+0.09$--$0.12$.
-\item \textbf{Forcing the partner to invite} helps the access protector least ($+0.13$ vs $+0.31$--$0.33$ signals); it restricts more in return.
-\item \textbf{The listener's own posterior} flags the costly ($P(c_A{=}1.6)=0.45$) and the attenuated speaker ($P(\omega_A{=}0.2)=0.59$).
-\end{itemize}
-\end{block}
-
-\begin{block}{9 \; What the Part I labels buy the observer}
-{\small\begin{tabular}{@{}lrrrr@{}}
-\toprule
-P(true family) & acts+signals & +labels & +oracle & null\\
+generator & acts+signals & +noisy labels & +true forms & +null labels\\
 \midrule
 attenuated & 0.612 & \textbf{0.672} & 0.678 & 0.612\\
 costly & 0.690 & \textbf{0.765} & 0.785 & 0.690\\
@@ -270,29 +243,73 @@ access-protecting & 0.681 & \textbf{0.756} & 0.812 & 0.681\\
 \end{tabular}}
 \smallskip
 
-Form labels add $+0.06$ to $+0.08$ and transmit 53--61\,\% of the oracle's information about the next signal; labels that only re-encode the act add exactly zero; labels add $\le0.006$ nat to next-\emph{act} prediction. Labels are informative \emph{only because} the form has a stipulated consequence for what gets checked.
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item \textbf{Mechanism family:} noisy form labels ($\eta=0.25$) raise this share by 0.060--0.075 (table); the mean posterior on the generating family rises by 0.013--0.141, most for access cost. Neither is a classification accuracy for people.
+\item \textbf{Next signal:} noisy labels provide 53--61\,\% of the log-loss gain obtained from true forms, under the specified noise model ($\eta=0.25$).
+\item \textbf{Next act:} labels add at most 0.006 nat. Null labels generated from already observed acts add no information under the specified model.
+\end{itemize}
+This gain depends on the stipulated form-to-access rule and the assumed label-noise channel; both require validation in real dialogues.
 
 \end{block}
 
-\begin{alertblock}{10 \; What is and is not claimed}
+\end{column}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% column 3
+\begin{column}{0.315\textwidth}
+
+\begin{block}{8 \; Three mechanisms compared across measurements --- speaker A with a reference partner}
+\begin{center}\includegraphics[width=0.9\textwidth]{../figures/H1_channels_reference.png}\end{center}
+\src{Table: subsample in which A starts on its own side ($q_{A,0}>0.5$; $n=1\,381$ simulated dialogues); the figure also shows all 2\,000. ``Private updating, public position unchanged'' $=|q_{A,12}-q_{A,0}|$ if A's public position at round 12 equals its initial one, else 0; mean over dialogues.}\\[0.05cm]
+{\small\begin{tabular}{@{}lrrrr@{}}
+\toprule
+measurement & reference & $\omega{=}0.2$ & $c{=}1.6$ & $\gamma{=}2$\\
+\midrule
+non-concession rate, rounds 9--12 & 0.79 & \textbf{0.98} & \textbf{1.00} & 0.81\\
+absolute private-belief change & 0.23 & \textbf{0.07} & 0.24 & 0.21\\
+private updating, public position unchanged & 0.08 & 0.06 & \textbf{0.22} & 0.08\\
+shared signals per dialogue & 2.64 & 2.58 & 2.73 & \textbf{2.09}\\
+restriction rate & 0.34 & 0.35 & 0.34 & \textbf{0.53}\\
+\bottomrule
+\end{tabular}}
+\smallskip
+
+Attenuation and concession cost produce similarly high non-concession rates, but different private belief changes: evidence has less influence under attenuation, while costly concession suppresses public acknowledgment despite private updating. The access-cost condition has a non-concession rate close to the reference condition, but more restriction and fewer shared signals; updating from received evidence remains intact. This formalises a possible access-restriction mechanism illustrated by trajectory~B.
+\end{block}
+
+\begin{block}{9 \; Responses to interventions in the specified simulation}
 \small\begin{itemize}\setlength{\itemsep}{1pt}
-\item All bridge results are \textbf{simulations of stipulated mechanisms}; no human data.
-\item The form $\to$ access rule, and the transport of two confusion rows to synthetic dyads, are assumptions to be estimated in real dyads.
-\item An independently written dyad with different design choices reproduces the access result; with $\omega$ on shared signals only its attenuated speaker looks honest: the sign of ``strong evidence'' tests depends on where attenuation is localised.
-\item Part I: the engine loses to a direct prompt; the keyword baseline was tuned on the scored cases; no gate ablation.
-\item Regime persistence adds nothing to next-act forecasting in the reciprocal dyad; no physiological cost is modelled.
+\item For the concession-cost condition, a partner REASSURE at round 7 increases the fraction of dialogues with at least one concession in rounds 7--12 by 15.5 percentage points relative to placebo (a REASSURE whose cost relief is disabled); removing $c$ from round 7 increases it by 27.5 points. Both contrasts are exactly zero in the other conditions, where $c=0$ by construction.
+\item In the access-cost condition, removing $\gamma$ from round 7 increases shared signals in rounds 7--12 by 0.199 per dialogue and reduces the restriction rate in rounds 7--12 by 18.7 percentage points; exactly zero where $\gamma=0$ by construction.
+\item In this implementation, one strong shared observation (reliability 0.95, round 7) increases the probability assigned to the true state least under attenuation: $+0.058$ versus $+0.09$--$0.12$. This ordering changes with where attenuation is applied.
+\item Setting the partner's form to invite from round 7 increases shared signals least in the access-cost condition ($+0.13$ versus $+0.31$--$0.33$ per dialogue); the focal agent increases restriction ($+0.067$).
+\end{itemize}
+\smallskip\textbf{Listener's model-based estimates --- not an intervention.} Partner B's posterior at round 12 over A's parameters (uniform prior over $c\in\{0,0.8,1.6\}$ and $\omega\in\{0.2,0.6,1\}$, i.e.\ $1/3$ each): $P(c_A{=}1.6)=0.45$ in the concession-cost condition (0.23--0.32 elsewhere); $P(\omega_A{=}0.2)=0.59$ in the attenuation condition (0.42--0.47 elsewhere). Means over the same $n=1\,381$ dialogues.
+\end{block}
+
+
+\begin{alertblock}{10 \; Scope and limits of the evidence}
+\small\begin{itemize}\setlength{\itemsep}{1pt}
+\item All bridge results come from simulations of specified mechanisms; no mechanism was fitted to or validated against human dialogue data.
+\item The form-to-access rule and the transfer of annotation confusion rows to dyadic forms are modelling assumptions requiring empirical validation.
+\item An independent implementation retains the qualitative access effect. Attenuation effects depend on where evidence weighting is reduced; with attenuation applied only to shared signals, the agent resembles the reference condition.
+\item In the archived comparison, the direct prompt outperforms the typed engine overall. Keyword rules were tuned on the scored cases; no gate ablation at fixed model and prompt was run.
+\item In the tested reciprocal simulation, adding a regime variable provides essentially no improvement in next-act prediction over a last-act baseline. Physiological or allostatic costs were not modelled or measured.
 \end{itemize}
 \end{alertblock}
 
-\begin{block}{11 \; What to measure next in real dyads}
-\small Private belief before and after (separates uptake from expression, $\approx17$ dialogues per group in simulation); whether each move \textbf{invites or restricts} verification and how much verification actually occurs (separates access, $\approx12$); the partner's estimate of the speaker; evidence exposure under a randomised incentive. The decisive test for the annotation: does invite/restrict coding of real dyads predict subsequent verification and belief change beyond action counts?
+\begin{block}{11 \; Next empirical test in real dyads}
+\small Measure private belief before and after dialogue using confidential reports; record public positions, invitations and restrictions of verification, actual checks and evidence exposure, and the partner's estimate of the speaker. Private-belief reports are measurements, not direct access to belief.
+
+\smallskip Test whether invite/restrict annotations predict subsequent verification and belief change beyond action counts and prior context, on held-out dyads.
+
+\smallskip\src{Use dialogues sampled independently of the ontology and a frozen coding manual; report inter-rater reliability. Annotators should be blind to subsequent verification and belief reports. The proposed annotation-to-access link would be weakened if annotations add no predictive value beyond actions and context on held-out dyads. Randomise acknowledgment costs to test intervention responses; determine human sample sizes from pilot data.}
 \end{block}
 
 \end{column}
 \end{columns}
 \vfill
 \begin{columns}[t,totalwidth=0.965\paperwidth]\begin{column}{\textwidth}
-{\small\color{meta} All bridge quantities are simulation constructs (2\,000 worlds per condition, paired 95\,\% Monte Carlo intervals); mechanisms are stipulated; no human data. Paper: Svet, M. (2026) \emph{Speech that Protects a Model: Typed Speech Evidence and Belief-Protecting Mechanisms in a Dialogue Dyad}, IWAI 2026. Code MIT, text and figures CC BY 4.0. Models built with AI research assistants; design decisions and interpretations are the author's.}
+{\small\color{meta} All bridge quantities are simulation constructs (2\,000 worlds per condition, paired 95\,\% Monte Carlo intervals) of specified mechanisms; none was fitted to or validated against human dialogue data. Paper: Svet, M. (2026) \emph{Speech that Protects a Model: Typed Speech Evidence and Belief-Protecting Mechanisms in a Dialogue Dyad}, IWAI 2026. Code MIT, text and figures CC BY 4.0. Models built with AI research assistants; design decisions and interpretations are the author's.}
 \end{column}\end{columns}
 \end{frame}
 \end{document}
